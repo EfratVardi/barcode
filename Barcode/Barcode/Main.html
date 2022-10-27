@@ -3,6 +3,36 @@
 <head>
     <meta charset="utf-8" />
     <title>אפרת מלכה</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bg {
+            /* The image used */
+            background-image: url('background.jpg');
+            /* Full height */
+            height: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -1
+        }
+
+        .bd {
+            /* Full height */
+            height: 90%;
+            width: 90%;
+            /* Center and scale the image nicely */
+            background-color: #ffffff;
+            opacity: 0.4;
+            filter: alpha(opacity=40);
+            margin: auto;
+            
+        }
+    </style>
 </head>
 <body>
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -13,8 +43,10 @@
     <!--<script type="text/javascript" src="http://mydomain.com/xxxx.js"></script>-->
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>-->
     <script lang="javascript" src="xlsx.full.min.js"></script>
-
-    <script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+    <script src="scripts/bootstrap.min.js"></script>
+    <!--<script>
         document.addEventListener("keydown", (e) => {
             // USE THIS TO DISABLE CONTROL AND ALL FUNCTION KEYS
             //if (e.ctrlKey || (e.keyCode >= 112 && e.keyCode <= 123)) {
@@ -32,11 +64,12 @@
         document.addEventListener("contextmenu", function (e) {
             e.preventDefault();
         }, false);
-    </script>
+    </script>-->
 
 
     <script>
-        var end = new Date(2022, 06, 08);
+
+        var end = new Date(2023, 06, 08);
         var Today = new Date()
         if (Today < end) {
             var tasks = JSON.parse(localStorage.getItem("tasks"));
@@ -247,7 +280,7 @@
 
     </script>
 
-    <div id="printableArea" style="width:1px; height:1px;color:transparent; direction:rtl">
+    <!--<div id="printableArea" style="width:1px; height:1px;color:transparent; direction:rtl">
         <br /><br /><br /><br /><br /><br /><br />
         <br /><br /><br /><br /><br /><br /><br />
         <span style="font-size:60px; font-family: Fb Magnolia;z-index: -1;">אישור </span>
@@ -260,49 +293,33 @@
         <br /><br /><br /><br /><br /><br /> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> <br /><br /><br /><br /><br /><br />
 
         <div id="d5" style="font-size:20px; font-family: Fb Magnolia;">להזמנות: אפרת מלכה 0504167969 211efrat@gmail.com</div>
+    </div>-->
+    <div class="bg">
+        <div class="bd">
+            <!--<br />
+            <br />-->
+
+            <!--<p style="color: black; text-align:center;font-size:50px;font-weight:400" id="line1">ברוכה הבאה</p>
+            <p style="color: black;text-align: center;font-size: 30px;font-weight: 300" ; id="line2">העבירי את הכרטיס האישי שלך בסורק הברקוד</p>-->
+
+            <!--<button disabled id="btn"
+                    style="
+            width: 400px;
+            height: 390px;
+            background-color: transparent;
+            background-image: url(barcode.gif);
+            background-size: 400px;
+            margin-left: 450px;
+            border-color:transparent"></button>-->
+
+        </div>
+
     </div>
 
-    <section id="sec1" style="background-image: url('background.jpg');  z-index: -1; position: absolute;background-size:100%; width: 1500px; height: 850px;"></section>
+    <!--<section id="sec1" style="background-image: url('background.jpg');  z-index: -1; position: absolute;background-size:100%; width: 1500px; height: 850px;"></section>-->
 
-    <section style="
-        width: 1380px;
-        height: 750px;
-        background-color: #ffffff;
-        opacity: 0.4;
-        filter: alpha(opacity=40);
-        float: left;
-        margin-left: 60px;
-        margin-top: 50px">
-        <br />
-        <br />
 
-        <p style="color: black; text-align:center;font-size:50px;font-weight:400" id="line1">ברוכה הבאה</p>
-        <p style="color: black;text-align: center;font-size: 30px;font-weight: 300" ; id="line2">העבירי את הכרטיס האישי שלך בסורק הברקוד</p>
-
-        <button disabled id="btn"
-                style="
-        width: 400px;
-        height: 390px;
-        background-color: transparent;
-        background-image: url(barcode.gif);
-        background-size: 400px;
-        margin-left: 450px;
-		border-color:transparent"></button>
-
-        <!--<button disabled id="btn" style="
-        width: 400px;
-        height: 400px;
-        background-color: transparent;
-        background-image: url(logo.gif);
-        background-size: 800px;
-        background-position: center;
-        float: right;
-        margin-top: 200px;
-        border-color:transparent"></button>-->
-
-    </section>
-
-    <input type="text" class="my-input" id="barcode" style="background-color:transparent;border-color:transparent; float:left">
+    <!--<input type="text" class="my-input" id="barcode" style="background-color:transparent;border-color:transparent; float:left">-->
 
     <style>
 
@@ -318,5 +335,15 @@
 </body>
 </html>
 
+
+<!--style="
+        width: 1380px;
+        height: 750px;
+        background-color: #ffffff;
+        opacity: 0.4;
+        filter: alpha(opacity=40);
+        float: left;
+        margin-left: 60px;
+        margin-top: 50px"-->
 
 
