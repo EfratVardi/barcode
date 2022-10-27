@@ -1,0 +1,441 @@
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\Barcode.dll.config
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\Barcode.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\Barcode.pdb
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\Barcode.xml
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\csc.exe
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\csc.exe.config
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\csc.rsp
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\csi.exe
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\csi.exe.config
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\csi.rsp
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.AppContext.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.Console.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.IO.Compression.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.Net.Http.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.Net.Sockets.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.ValueTuple.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.Xml.XPath.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\vbc.exe
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\vbc.exe.config
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\vbc.rsp
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\VBCSCompiler.exe
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\obj\Debug\Barcode.Resources.resources
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\obj\Debug\Barcode.vbproj.GenerateResource.cache
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\obj\Debug\Barcode.vbproj.CoreCompileInputs.cache
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\obj\Debug\Barcode.vbproj.CopyComplete
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\obj\Debug\Barcode.dll
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\obj\Debug\Barcode.xml
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\obj\Debug\Barcode.pdb
+C:\Users\אפרת ורדי\Desktop\Barcode\Barcode\obj\Debug\Barcode.vbprojAssemblyReference.cache
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\Barcode.dll.config
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\Barcode.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\Barcode.pdb
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\Barcode.xml
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\csc.exe
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\csc.exe.config
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\csc.rsp
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\csi.exe
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\csi.exe.config
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\csi.rsp
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.AppContext.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.Console.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.IO.Compression.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.Net.Http.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.Net.Sockets.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.ValueTuple.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.Xml.XPath.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\vbc.exe
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\vbc.exe.config
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\vbc.rsp
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\VBCSCompiler.exe
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\obj\Debug\Barcode.vbprojAssemblyReference.cache
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\obj\Debug\Barcode.Resources.resources
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\obj\Debug\Barcode.vbproj.GenerateResource.cache
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\obj\Debug\Barcode.vbproj.CoreCompileInputs.cache
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\obj\Debug\Barcode.vbproj.CopyComplete
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\obj\Debug\Barcode.dll
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\obj\Debug\Barcode.xml
+C:\Users\אפרת ורדי\Desktop\סופי\Barcode\Barcode\obj\Debug\Barcode.pdb
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\Barcode.dll.config
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\Barcode.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\Barcode.pdb
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\Barcode.xml
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\csc.exe
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\csc.exe.config
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\csc.rsp
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\csi.exe
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\csi.exe.config
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\csi.rsp
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.AppContext.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.Console.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.IO.Compression.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.Net.Http.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.Net.Sockets.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.ValueTuple.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.Xml.XPath.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\vbc.exe
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\vbc.exe.config
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\vbc.rsp
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\VBCSCompiler.exe
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\obj\Debug\Barcode.vbprojAssemblyReference.cache
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\obj\Debug\Barcode.Resources.resources
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\obj\Debug\Barcode.vbproj.GenerateResource.cache
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\obj\Debug\Barcode.vbproj.CoreCompileInputs.cache
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\obj\Debug\Barcode.vbproj.CopyComplete
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\obj\Debug\Barcode.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\obj\Debug\Barcode.xml
+C:\Users\אפרת ורדי\Desktop\ברקוד\סופי\Barcode\Barcode\obj\Debug\Barcode.pdb
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\Barcode.dll.config
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\Barcode.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\Barcode.pdb
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\Barcode.xml
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\csc.exe
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\csc.exe.config
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\csc.rsp
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\csi.exe
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\csi.exe.config
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\csi.rsp
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.AppContext.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.Console.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.IO.Compression.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.Net.Http.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.Net.Sockets.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.ValueTuple.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.Xml.XPath.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\vbc.exe
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\vbc.exe.config
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\vbc.rsp
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\VBCSCompiler.exe
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\obj\Debug\Barcode.vbprojAssemblyReference.cache
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\obj\Debug\Barcode.Resources.resources
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\obj\Debug\Barcode.vbproj.GenerateResource.cache
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\obj\Debug\Barcode.vbproj.CoreCompileInputs.cache
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\obj\Debug\Barcode.vbproj.CopyComplete
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\obj\Debug\Barcode.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\obj\Debug\Barcode.xml
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\סופי\Barcode\Barcode\obj\Debug\Barcode.pdb
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\Barcode.dll.config
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\Barcode.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\Barcode.pdb
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\Barcode.xml
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\csc.exe
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\csc.exe.config
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\csc.rsp
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\csi.exe
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\csi.exe.config
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\csi.rsp
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.AppContext.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.Console.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.IO.Compression.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.Net.Http.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.Net.Sockets.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.ValueTuple.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.Xml.XPath.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\vbc.exe
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\vbc.exe.config
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\vbc.rsp
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\VBCSCompiler.exe
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\obj\Debug\Barcode.vbprojAssemblyReference.cache
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\obj\Debug\Barcode.Resources.resources
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\obj\Debug\Barcode.vbproj.GenerateResource.cache
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\obj\Debug\Barcode.vbproj.CoreCompileInputs.cache
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\obj\Debug\Barcode.vbproj.CopyComplete
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\obj\Debug\Barcode.dll
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\obj\Debug\Barcode.xml
+C:\Users\אפרת ורדי\Desktop\ברקוד נווה בת שבע\Barcode\Barcode\obj\Debug\Barcode.pdb
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\Barcode.dll.config
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\Barcode.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\Barcode.pdb
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\Barcode.xml
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\csc.exe
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\csc.exe.config
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\csc.rsp
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\csi.exe
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\csi.exe.config
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\csi.rsp
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.AppContext.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.Console.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.IO.Compression.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.Net.Http.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.Net.Sockets.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.ValueTuple.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.Xml.XPath.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\vbc.exe
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\vbc.exe.config
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\vbc.rsp
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\VBCSCompiler.exe
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\obj\Debug\Barcode.vbprojAssemblyReference.cache
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\obj\Debug\Barcode.Resources.resources
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\obj\Debug\Barcode.vbproj.GenerateResource.cache
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\obj\Debug\Barcode.vbproj.CoreCompileInputs.cache
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\obj\Debug\Barcode.vbproj.CopyComplete
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\obj\Debug\Barcode.dll
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\obj\Debug\Barcode.xml
+C:\Users\אפרת ורדי\Desktop\נווה בת שבע 2\Barcode\Barcode\obj\Debug\Barcode.pdb
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\Barcode.dll.config
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\Barcode.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\Barcode.pdb
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\Barcode.xml
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\csc.exe
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\csc.exe.config
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\csc.rsp
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\csi.exe
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\csi.exe.config
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\csi.rsp
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.AppContext.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.Console.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.IO.Compression.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.Net.Http.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.Net.Sockets.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.ValueTuple.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.Xml.XPath.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\vbc.exe
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\vbc.exe.config
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\vbc.rsp
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\VBCSCompiler.exe
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\obj\Debug\Barcode.vbprojAssemblyReference.cache
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\obj\Debug\Barcode.Resources.resources
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\obj\Debug\Barcode.vbproj.GenerateResource.cache
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\obj\Debug\Barcode.vbproj.CoreCompileInputs.cache
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\obj\Debug\Barcode.vbproj.CopyComplete
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\obj\Debug\Barcode.dll
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\obj\Debug\Barcode.xml
+C:\Users\אפרת ורדי\Desktop\פרויקט ברקוד בע''מ\Barcode\Barcode\obj\Debug\Barcode.pdb

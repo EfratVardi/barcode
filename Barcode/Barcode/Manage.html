@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ממשק ניהול</title>
+</head>
+<body>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.3/xlsx.full.min.js"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>-->
+
+    <script lang="javascript" src="xlsx.full.min.js"></script>
+
+    <script type="text/javascript">
+        var json_object;
+
+        var ExcelToJSON = function () {
+
+
+            this.parseExcel = function (file) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    var data = e.target.result;
+                    var workbook = XLSX.read(data, {
+                        type: 'binary'
+                    });
+                    workbook.SheetNames.forEach(function (sheetName) {
+                        var XL_row_object = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[sheetName]);
+                        json_object = JSON.stringify(XL_row_object);
+                        if (file.name.includes("students")) {
+                            if (localStorage.getItem("students") == null) {
+                                localStorage.setItem("students", "");
+                            }
+                            localStorage["students"] = json_object;
+                        }
+                        else if (file.name.includes("tasks")) {
+                            if (localStorage.getItem("tasks") == null) {
+                                localStorage.setItem("tasks", "");
+                            }
+                            localStorage["tasks"] = json_object;
+                        }
+                    })
+                };
+
+                reader.onerror = function (ex) {
+                    console.log(ex);
+                };
+
+                reader.readAsBinaryString(file);
+            };
+        };
+
+        function handleFileSelect(evt) {
+
+            var files = evt.target.files;
+            var xl2json = new ExcelToJSON();
+            xl2json.parseExcel(files[0]);
+        }
+
+        function exportWS() {
+            myObj1 = JSON.parse(localStorage.getItem("students"))
+            var myFile = "details.xlsx";
+            var myWorkSheet = XLSX.utils.json_to_sheet(myObj1);
+            var myWorkBook = XLSX.utils.book_new();
+            XLSX.utils.book_append_sheet(myWorkBook, myWorkSheet, "myWorkSheet");
+            XLSX.writeFile(myWorkBook, myFile);
+        }
+    </script>
+    <section id="sec1" style="background-image: url('background.jpg');  z-index: -1; position: absolute;background-size:100%; width: 1500px; height: 850px;"></section>
+
+    <section style="
+        width: 1380px;
+        height: 750px;
+        background-color: #ffffff;
+        opacity: 0.4;
+        filter: alpha(opacity=40);
+        float: left;
+        margin-left: 60px;
+        margin-top: 50px">
+        <br />
+        <br />
+        <p style="color: black; text-align:center;font-size:50px;font-weight:400" id="line1"> ברוכה הבאה לממשק ניהול</p>
+        <button id="btn"
+                style="
+        width: 600px;
+        height: 350px;
+        background-color: transparent;
+        background-image: url(up.gif);
+        background-size: 550px;
+        margin-left:425px;
+        border:none
+    "></button>
+
+        <div style="margin-left:420px">
+            <div><label style="font-size: 13px;" >תלמידות </label><input id="uploadStudents" type=file name="files[]" style=""></div>  
+            <label style="font-size: 13px;" >משימות </label><input id="uploadTasks" type=file name="files[]">
+            <button type="button" onclick="exportWS()">הורד נתונים</button>
+        </div>
+
+    </section>
+    <script>
+        document.getElementById('uploadStudents').addEventListener('change', handleFileSelect, false);
+        document.getElementById('uploadTasks').addEventListener('change', handleFileSelect, false);
+
+    </script>
+    <style>
+        section {
+            font-family: Fb Magnolia;
+            font-style: normal;
+            font-variant: normal;
+            line-height: 26.4px;
+        }
+    </style>
+</body>
+</html>
