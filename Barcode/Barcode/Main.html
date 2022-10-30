@@ -3,60 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <title>אפרת מלכה</title>
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-        }
-
-        .background1 {
-            background-image: url('background.jpg');
-            height: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            z-index: -1;
-            padding-top: 2.5%;
-            padding-bottom: 2.5%
-        }
-
-        .background2 {
-            height: 100%;
-            width: 95%;
-            background-color: #ffffff;
-            opacity: 0.4;
-            filter: alpha(opacity=40);
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        .text {
-            position: absolute;
-            left: 10%;
-            top: 20%;
-            bottom: 20%;
-            width: 80%;
-            text-align: center;
-            margin-right: auto;
-            margin-left: auto;
-            border: solid;
-            border-color: red
-        }
-
-        .text1 {
-            color: black;
-            font-size: 400%;
-            font-weight: 400
-        }
-
-        .text2 {
-            color: black;
-            font-size: 300%;
-            font-weight: 300
-        }
-    </style>
+   
 </head>
 <body>
+    <link href="StyleSheet.css" rel="stylesheet" />
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>-->
@@ -147,10 +97,7 @@
                     return;
                 document.getElementById("line1").innerHTML = "! המוצר נרכש בהצלחה ";
                 document.getElementById("line2").innerHTML = "מיד תועברי להדפסת אישור";
-                document.getElementById("btn").style.backgroundImage = 'url(like.gif)';
-                document.getElementById("btn").style.backgroundSize = "300px"
-                document.getElementById("btn").style.width = "300px"
-                document.getElementById("btn").style.height = "270px"
+                document.getElementById("gif").src = 'like.gif';
                 toPrint(0);
             };
             function updateTask() {
@@ -172,10 +119,7 @@
                 savePoints(taskResults.points);
                 document.getElementById("line1").innerHTML = "הידד" + "! " + "ביצעת את משימה" + " " + taskResults.name;
                 document.getElementById("line2").innerHTML = "מיד תועברי להדפסת אישור";
-                document.getElementById("btn").style.backgroundImage = 'url(like.gif)';
-                document.getElementById("btn").style.backgroundSize = "300px"
-                document.getElementById("btn").style.width = "300px"
-                document.getElementById("btn").style.height = "270px"
+                document.getElementById("gif").src = 'like.gif';
                 toPrint(1);
             }
 
@@ -214,11 +158,6 @@
                     var input = document.querySelector(".my-input");
                     input.focus();
                     input.value = e.key;
-                    document.getElementById("barcode").style.color = "transparent";
-                    document.getElementById("barcode").style.backgroundColor = "transparent";
-                    document.getElementById("barcode").style.visibility = false;
-
-
                     e.preventDefault();
                 }
                 counter += 1;
@@ -240,10 +179,7 @@
 
                     document.getElementById("line1").innerHTML = "ברוכה הבאה ";
                     document.getElementById("line2").innerHTML = "העבירי את הכרטיס האישי שלך בסורק הברקוד";
-                    document.getElementById("btn").style.backgroundImage = 'url(barcode.gif)';
-                    document.getElementById("btn").style.width = "400px"
-                    document.getElementById("btn").style.height = "350px"
-                    document.getElementById("btn").style.backgroundSize = "400px";
+                    document.getElementById("gif").src = 'barcode.gif';
                     document.getElementById("barcode").value = "";
                     lock = 0;
                     counter = 0;
@@ -297,12 +233,12 @@
             }
         }
         else {
-            alert("מצטערים:(  פג תוקף הרשיון!")
+            alert("מצטערים.  פג תוקף הרשיון!")
         }
 
     </script>
 
-    <!--<div id="printableArea" style="width:1px; height:1px;color:transparent; direction:rtl">
+    <!--<div id="printableArea" style="height:1px;color:transparent; border:solid;border-color:red;">
         <br /><br /><br /><br /><br /><br /><br />
         <br /><br /><br /><br /><br /><br /><br />
         <span style="font-size:60px; font-family: Fb Magnolia;z-index: -1;">אישור </span>
@@ -324,35 +260,11 @@
                 <br />
                 <span class="text2" id="line2">העבירי את הכרטיס האישי שלך בסורק הברקוד</span>
                 <br />
-                <img src="barcode.gif" style="width:30%;height:80%" />
+                <img src="barcode.gif" class="gif" id="gif" />
             </div>
+            <input type="text" class="my-input" id="barcode">
         </div>
     </div>
-
-    <!--<section id="sec1" style="background-image: url('background.jpg');  z-index: -1; position: absolute;background-size:100%; width: 1500px; height: 850px;"></section>-->
-    <!--<input type="text" class="my-input" id="barcode" style="background-color:transparent;border-color:transparent; float:left">-->
-
-    <style>
-
-        span {
-            font-family: Fb Magnolia;
-            font-style: normal;
-            font-variant: normal;
-            line-height: 26.4px;
-        }
-    </style>
-
-
 </body>
 </html>
 
-
-<!--style="
-        width: 1380px;
-        height: 750px;
-        background-color: #ffffff;
-        opacity: 0.4;
-        filter: alpha(opacity=40);
-        float: left;
-        margin-left: 60px;
-        margin-top: 50px"-->
