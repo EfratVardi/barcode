@@ -37,20 +37,23 @@ body, html {
     font-family: Fb Magnolia;
     font-style: normal;
     font-variant: normal;
-    line-height: calc(1.525rem + 3.3vw);
+    line-height: 4vw;
     color: black;
 }
 
 .text1 {
-    font-size: calc(1.525rem + 3.3vw);
+    font-size: 4.5vw;
     font-weight: 400;
 }
 
 .text2 {
-    font-size: calc(1.525rem + 1.3vw);
+    font-size: 3vw;
     font-weight: 300;
 }
 
+.gif {
+    width: 25vw;
+}
 
 .my-input {
     border-color: transparent;
@@ -62,6 +65,4 @@ input:focus {
     color: transparent;
 }
 
-.gif {
-    width: calc(14.525rem + 14.3vw);
-}
+
