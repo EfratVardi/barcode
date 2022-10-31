@@ -34,26 +34,23 @@ body, html {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-}
-
-.text1 {
-    color: black;
-    font-size: 400%;
-    font-weight: 400
-}
-
-.text2 {
-    color: black;
-    font-size: 300%;
-    font-weight: 300
-}
-
-span {
     font-family: Fb Magnolia;
     font-style: normal;
     font-variant: normal;
-    line-height: 26.4px;
+    line-height: calc(1.525rem + 3.3vw);
+    color: black;
 }
+
+.text1 {
+    font-size: calc(1.525rem + 3.3vw);
+    font-weight: 400;
+}
+
+.text2 {
+    font-size: calc(1.525rem + 1.3vw);
+    font-weight: 300;
+}
+
 
 .my-input {
     border-color: transparent;
@@ -66,7 +63,5 @@ input:focus {
 }
 
 .gif {
-    width: 30%;
-    height: 80%;
+    width: calc(14.525rem + 14.3vw);
 }
-
