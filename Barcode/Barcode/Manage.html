@@ -7,56 +7,13 @@
 <body>
 
     <link href="StyleSheet.css" rel="stylesheet" />
-    <script lang="javascript" src="xlsx.full.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
-
+    <script src="xlsx.full.min.js"></script>
+    <script src="ag-grid-community.min.js"></script>
+    <script src="ag-grid.js"></script>
     <script type="text/javascript">
-        var json_object;
 
-        var ExcelToJSON = function () {
-
-
-            this.parseExcel = function (file) {
-                var reader = new FileReader();
-
-                reader.onload = function (e) {
-                    var data = e.target.result;
-                    var workbook = XLSX.read(data, {
-                        type: 'binary'
-                    });
-                    workbook.SheetNames.forEach(function (sheetName) {
-                        var XL_row_object = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[sheetName]);
-                        json_object = JSON.stringify(XL_row_object);
-                        if (file.name.includes("students")) {
-                            if (localStorage.getItem("students") == null) {
-                                localStorage.setItem("students", "");
-                            }
-                            localStorage["students"] = json_object;
-                        }
-                        else if (file.name.includes("tasks")) {
-                            if (localStorage.getItem("tasks") == null) {
-                                localStorage.setItem("tasks", "");
-                            }
-                            localStorage["tasks"] = json_object;
-                        }
-                    })
-                };
-
-                reader.onerror = function (ex) {
-                    console.log(ex);
-                };
-
-                reader.readAsBinaryString(file);
-            };
-        };
-
-        function handleFileSelect(evt) {
-
-            var files = evt.target.files;
-            var xl2json = new ExcelToJSON();
-            xl2json.parseExcel(files[0]);
-        }
 
         function exportWS() {
             myObj1 = JSON.parse(localStorage.getItem("students"))
@@ -70,38 +27,14 @@
 
     <div class="background1">
         <div class="background2">
-            <p style="color: black; text-align:center;font-size:50px;font-weight:400" id="line1"> ברוכה הבאה לממשק ניהול</p>
-            <button id="btn"
-                    style="
-        width: 600px;
-        height: 350px;
-        background-color: transparent;
-        background-image: url(up.gif);
-        background-size: 550px;
-        margin-left:425px;
-        border:none
-    "></button>
-
-            <div style="margin-left:420px">
-                <div><label style="font-size: 13px;">תלמידות </label><input id="uploadStudents" type=file name="files[]" style=""></div>
-                <label style="font-size: 13px;">משימות </label><input id="uploadTasks" type=file name="files[]">
-                <button type="button" onclick="exportWS()">הורד נתונים</button>
+            <div class="text">
+                <div class="text1" id="line1">ברוכה הבאה לממשק ניהול</div>
+                <div class="text2" id="line2">כאן אפשר לצפות ולהוריד את הנתונים</div>
             </div>
-
-            </section>
-            <!--<div class="text">
-                <div class="text1 fs-2" id="line1">ברוכה הבאה</div>
-                <div class="text2" id="line2">העבירי את הכרטיס האישי שלך בסורק הברקוד</div>
-                <img src="barcode.gif" class="gif" id="gif" />
-            </div>-->
-            <input type="text" class="my-input" id="barcode">
+            <button type="button" onclick="exportWS()">הורד נתונים</button>           
+            <div id="myGrid" style="height:80%" class="ag-theme-alpine" ></div>
         </div>
     </div>
 
-
-    <script>
-        document.getElementById('uploadStudents').addEventListener('change', handleFileSelect, false);
-        document.getElementById('uploadTasks').addEventListener('change', handleFileSelect, false);
-    </script>
 </body>
 </html>
