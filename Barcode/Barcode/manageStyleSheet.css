@@ -27,14 +27,15 @@
 
 .button {
     font-weight: 200;
-    text-align:right;
+    text-align: right;
+    font-family: Arial;
 }
 
 .ag-theme-alpine {
     display: inline-block;
     padding: 1rem 1rem;
     vertical-align: middle;
-    height: 80%;
+    height: 85%;
 }
 
 
