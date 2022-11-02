@@ -6,7 +6,8 @@
 </head>
 <body>
 
-    <link href="StyleSheet.css" rel="stylesheet" />
+    <link href="ManageStyleSheet.css" rel="stylesheet" />
+    <link href="MainStyleSheet.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
     <script src="xlsx.full.min.js"></script>
@@ -29,10 +30,11 @@
         <div class="background2">
             <div class="text">
                 <div class="text1" id="line1">ברוכה הבאה לממשק ניהול</div>
-                <div class="text2" id="line2">כאן אפשר לצפות ולהוריד את הנתונים</div>
+                <div class="text2" id="line2">כאן אפשר לצפות, לערוך ולהוריד את הנתונים</div>
+                <div class="button"><button type="button" onclick="exportWS()">ייצוא לאקסל</button></div>
+                <div id="tasksGrid" style=" width:35%;" class="ag-theme-alpine"></div>
+                <div id="studentsGrid" style="width:60%" class="ag-theme-alpine"></div>
             </div>
-            <button type="button" onclick="exportWS()">הורד נתונים</button>           
-            <div id="myGrid" style="height:80%" class="ag-theme-alpine" ></div>
         </div>
     </div>
 

@@ -1,35 +1,78 @@
-﻿var columnDefs = [
-    { headerName: "כיתה", field: "grade" },
-    { headerName: "תעודת זהות", field: "tz" },
-    { headerName: "שם פרטי", field: "first" },
-    { headerName: "משפחה", field: "last" },
-    { headerName: "מספרי משימות", field: "tasksNumber",hide:true },
+﻿
+var scolumnDefs = [
+    { headerName: "כיתה", field: "grade", editable: true },
+    { headerName: "שם פרטי", field: "first", editable: true },
+    { headerName: "משפחה", field: "last", editable: true },
+    //{ headerName: "שם", field: "name", valueFormatter: nameFormatter},
+    { headerName: "מספרי משימות", field: "tasksNumber" ,hide:true },
     { headerName: "שמות המשימות", field: "tasks" },
     { headerName: "סך נקודות", field: "points" }
 ];
 
-var rowData = JSON.parse(localStorage.getItem("students"))
+var tcolumnDefs = [
+    { headerName: "שם משימה", field: "name", editable: true },
+    { headerName: "שווי משימה", field: "points", editable: true },
+    { headerName: "תאריך להגשה", field: "date", editable: true },
+    { headerName: "שעה להגשה", field: "hour", editable: true }
+];
 
-var gridOptions = {
-    columnDefs: columnDefs,
+var srowData = JSON.parse(localStorage.getItem("students"))
+var trowData = JSON.parse(localStorage.getItem("tasks"))
+
+
+var sgridOptions = {
+    columnDefs: scolumnDefs,
     defaultColDef: {
         filter: true,
         sortable: true,
-        resizable: true 
+        resizable: true
     },
-    rowData: rowData,
+    enableRtl: true,
+    rowData: srowData,
     onFirstDataRendered: onFirstDataRendered,
+};
 
+var tgridOptions = {
+    columnDefs: tcolumnDefs,
+    defaultColDef: {
+        filter: true,
+        sortable: true,
+        resizable: true
+    },
+    enableRtl: true,
+    rowData: trowData,
+    onFirstDataRendered: onFirstDataRendered,
 };
 function onFirstDataRendered(params) {
-    const allColumnIds = [];
-    gridOptions.columnApi.getColumns().forEach((column) => {
-        allColumnIds.push(column.getId());
+    //const allColumnIds = [];
+    //gridOptions.columnApi.getColumns().forEach((column) => {
+    //    allColumnIds.push(column.getId());
+    //});
+
+    //gridOptions.columnApi.autoSizeColumns(allColumnIds, false);
+
+    tgridOptions.api.sizeColumnsToFit({
+        defaultMinWidth: 150,
+        columnLimits: [{ key: 'tasks', minWidth: 300 }],
     });
 
-    gridOptions.columnApi.autoSizeColumns(allColumnIds, false);}
+    sgridOptions.api.sizeColumnsToFit({
+        defaultMinWidth: 150,
+        columnLimits: [{ key: 'tasks', minWidth: 300 }],
+    });
+}
+
+//function nameFormatter(params) {
+//    var name = params.data.first + " " + params.data.last;
+//    return name;
+//}
 
 document.addEventListener('DOMContentLoaded', function () {
-    var gridDiv = document.querySelector('#myGrid');
-    new agGrid.Grid(gridDiv, gridOptions);
+    var gridDiv = document.querySelector('#studentsGrid');
+    new agGrid.Grid(gridDiv, sgridOptions);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var gridDiv = document.querySelector('#tasksGrid');
+    new agGrid.Grid(gridDiv, tgridOptions);
 });
