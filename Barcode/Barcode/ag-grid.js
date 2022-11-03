@@ -3,7 +3,6 @@ var scolumnDefs = [
     { headerName: "כיתה", field: "grade", editable: true },
     { headerName: "שם פרטי", field: "first", editable: true },
     { headerName: "משפחה", field: "last", editable: true },
-    //{ headerName: "שם", field: "name", valueFormatter: nameFormatter},
     { headerName: "מספרי משימות", field: "tasksNumber" ,hide:true },
     { headerName: "שמות המשימות", field: "tasks" },
     { headerName: "סך נקודות", field: "points" }
@@ -41,7 +40,7 @@ var tgridOptions = {
     },
     enableRtl: true,
     rowData: trowData,
-    onFirstDataRendered: onFirstDataRendered,
+    onFirstDataRendered: onFirstDataRendered
 };
 function onFirstDataRendered(params) {
     //const allColumnIds = [];
@@ -61,11 +60,9 @@ function onFirstDataRendered(params) {
         columnLimits: [{ key: 'tasks', minWidth: 300 }],
     });
 }
-
-//function nameFormatter(params) {
-//    var name = params.data.first + " " + params.data.last;
-//    return name;
-//}
+function sExport() {
+    sgridOptions.api.exportDataAsCsv();
+}
 
 document.addEventListener('DOMContentLoaded', function () {
     var gridDiv = document.querySelector('#studentsGrid');

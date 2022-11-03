@@ -8,9 +8,9 @@
 <body>
     <link href="UserStyleSheet.css" rel="stylesheet" />
     <link href="MainStyleSheet.css" rel="stylesheet" />
-    <script lang="javascript" src="xlsx.full.min.js"></script>
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
 
     <!--<script>
         document.addEventListener("keydown", (e) => {
@@ -40,8 +40,6 @@
         if (Today < end) {
             var tasks = JSON.parse(localStorage.getItem("tasks"));
             var products = [{}];
-
-
             var counter = 0;
             var status = 0;
             var fullName;
@@ -74,7 +72,6 @@
                             taskResults = products[i]
                         }
                     }
-
                 if (taskResults == "") {
                     alert("קוד לא תקין, גשי למורה!")
                     reset(0);
@@ -94,6 +91,7 @@
                 document.getElementById("gif").src = 'like.gif';
                 toPrint(0);
             };
+
             function updateTask() {
                 if (taskResults.code != "358312007" && taskResults.code != "358312008" && taskResults.code != "358312009" && taskResults.code != "358312010") {
                     if (results.tasksNumber.includes(taskResults.code)) {
@@ -144,7 +142,6 @@
                 grade = results.grade;
                 document.getElementById("line1").innerHTML = "(: שלום  " + fullName;
                 document.getElementById("line2").innerHTML = "סרקי את הברקוד לעדכון משימה";
-
             }
 
             document.addEventListener("keypress", function (e) {
@@ -164,8 +161,6 @@
                 }
                 if (lock == 1)
                     document.getElementById("barcode").value = "";
-
-
             });
 
             function reset(time) {
@@ -230,7 +225,7 @@
             alert("מצטערים.  פג תוקף הרשיון!")
         }
 
-        function click() {
+        function href() {
             window.location.href = 'Manage.html';
         }
     </script>
@@ -259,8 +254,40 @@
             </div>
             <input type="text" class="my-input" id="barcode">
         </div>
-        <button onclick="click()">Click me</button>
     </div>
+
+    <div class="container">
+        <button data-toggle="modal" data-target="#myModal">ממשק ניהול</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">כניסה לממשק ניהול</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <!--<label for="psw"><span class="glyphicon glyphicon-eye-open"></span>סיסמא</label>-->
+                                <input type="text" class="form-control" id="psw" placeholder="הכניסי סיסמא">
+                            </div>          
+                            <button type="submit" class="btn btn-default btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">סגור</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>
 

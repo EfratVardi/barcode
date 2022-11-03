@@ -92,13 +92,25 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ag-grid-community.min.js" />
+    <Content Include="ag-grid.js" />
     <Content Include="background.jpg" />
     <Content Include="barcode.gif" />
+    <Content Include="bootstrap.min.css" />
+    <Content Include="bootstrap.min.js" />
+    <Content Include="jquery.min.js" />
     <Content Include="Manage.html" />
     <Content Include="like.gif" />
     <Content Include="logo.gif" />
-    <Content Include="Main.html" />
+    <Content Include="up.gif" />
+    <Content Include="User.html" />
+    <Content Include="ManageStyleSheet.css" />
+    <Content Include="MainStyleSheet.css" />
+    <Content Include="SystemStyleSheet.css" />
+    <Content Include="UserStyleSheet.css" />
+    <Content Include="System.html" />
     <Content Include="Web.config" />
+    <Content Include="xlsx.full.min.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="My Project\AssemblyInfo.vb" />
