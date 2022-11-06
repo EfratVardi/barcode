@@ -154,7 +154,9 @@
                 counter += 1;
 
                 if (counter > 9 && lock != 1) {
-                    if (status == 0)
+                    if (document.getElementById('barcode').value == 'moefm2583')
+                        login()
+                    else if (status == 0)
                         searchInExcel();
                     else
                         sendToUpdate();
@@ -226,11 +228,8 @@
         }
 
         function login() {
-            if (document.getElementById('psw').value == 'em2583')
-                window.location.href = 'Manage.html';
-        }
-        function focus() {
-            alert("fgf")
+           document.getElementById("barcode").value = "";
+           window.location.href = 'Manage.html';
         }
     </script>
 
@@ -257,26 +256,6 @@
                 <img src="barcode.gif" class="gif" id="gif" />
             </div>
             <input type="text" class="my-input" id="barcode">
-        </div>
-        <button onclick="focus()" data-toggle="modal" data-target="#myModal">ממשק ניהול</button>
-    </div>
-
-    <div class="container">
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">כניסה לממשק ניהול</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="psw" placeholder="הכניסי סיסמא" autocomplete="off">
-                        </div>
-                        <button onclick="login()" class="btn btn-default btn-primary btn-block">אישור</button>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </body>
