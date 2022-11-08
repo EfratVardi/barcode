@@ -8,9 +8,10 @@
 <body>
     <link href="UserStyleSheet.css" rel="stylesheet" />
     <link href="MainStyleSheet.css" rel="stylesheet" />
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="jquery.min.js"></script>
-    <script src="bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
 
     <!--<script>
         document.addEventListener("keydown", (e) => {
@@ -34,7 +35,6 @@
 
 
     <script>
-
         var end = new Date(2023, 06, 08);
         var Today = new Date()
         if (Today < end) {
@@ -73,7 +73,7 @@
                         }
                     }
                 if (taskResults == "") {
-                    alert("קוד לא תקין, גשי למורה!")
+                    showAlert("קוד לא תקין, גשי למורה!")
                     reset(0);
                     status = 0;
                     return;
@@ -95,7 +95,7 @@
             function updateTask() {
                 if (taskResults.code != "358312007" && taskResults.code != "358312008" && taskResults.code != "358312009" && taskResults.code != "358312010") {
                     if (results.tasksNumber.includes(taskResults.code)) {
-                        alert("הי, אסור להגיש משימה פעמיים!");
+                        showAlert("הי, אסור להגיש משימה פעמיים!");
                         reset(0);
                         status = 0;
                         return;
@@ -122,7 +122,7 @@
                 document.getElementById("barcode").value = "";
                 myObj = JSON.parse(localStorage.getItem("students"));
                 if (myObj == null) {
-                    alert("לא הוזנו נתוני תלמידות, פני למורה!")
+                    showAlert("לא הוזנו נתוני תלמידות, פני למורה!")
                     reset(0);
                     status = 0;
                     return;
@@ -133,7 +133,7 @@
                     }
                 }
                 if (results == "") {
-                    alert("את לא מופיעה ברשימות, גשי למורה !")
+                    showAlert("את לא מופיעה ברשימות. גשי למורה!")
                     reset(0);
                     status = 0;
                     return;
@@ -185,7 +185,7 @@
 
                 sum = parseInt(points) + parseInt(results.points);
                 if (sum < 0) {
-                    alert("אין לך מספיק נקודות בחשבון !")
+                    showAlert("אין לך מספיק נקודות בחשבון !")
                     reset(0);
                     status = 0;
                     returnval = 1;
@@ -224,13 +224,26 @@
             }
         }
         else {
-            alert("מצטערים.  פג תוקף הרשיון!")
+            showAlert("מצטערים.  פג תוקף הרשיון!")
         }
 
         function login() {
-           document.getElementById("barcode").value = "";
-           window.location.href = 'Manage.html';
+            document.getElementById("barcode").value = "";
+            window.location.href = 'Manage.html';
         }
+
+        function showAlert(message) {
+            document.querySelector(".modal-body").innerHTML = message;
+            $(document).ready(function () {
+                $('#exampleModal').modal('show')
+            });
+            setTimeout(function () {
+                $(document).ready(function () {
+                    $('#exampleModal').modal('hide')
+                });
+            }, 3500);
+        }
+
     </script>
 
     <!--<div id="printableArea" style="height:1px;color:transparent; border:solid;border-color:red;">
@@ -250,6 +263,7 @@
 
     <div class="background1">
         <div class="background2">
+
             <div class="text">
                 <div class="text1" id="line1">ברוכה הבאה</div>
                 <div class="text2" id="line2">העבירי את הכרטיס האישי שלך בסורק הברקוד</div>
@@ -258,6 +272,19 @@
             <input type="text" class="my-input" id="barcode">
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="direction:rtl">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">הודעת מערכת</h5>
+                </div>
+                <div class="modal-body"> </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
 

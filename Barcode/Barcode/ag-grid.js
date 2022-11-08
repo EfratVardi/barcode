@@ -43,12 +43,6 @@ var tgridOptions = {
     onFirstDataRendered: onFirstDataRendered
 };
 function onFirstDataRendered(params) {
-    //const allColumnIds = [];
-    //gridOptions.columnApi.getColumns().forEach((column) => {
-    //    allColumnIds.push(column.getId());
-    //});
-
-    //gridOptions.columnApi.autoSizeColumns(allColumnIds, false);
 
     tgridOptions.api.sizeColumnsToFit({
         defaultMinWidth: 150,
