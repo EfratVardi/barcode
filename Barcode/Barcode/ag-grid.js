@@ -22,7 +22,10 @@ var trowData = JSON.parse(localStorage.getItem("tasks"))
 var sgridOptions = {
     columnDefs: scolumnDefs,
     defaultColDef: {
-        filter: true,
+        //filter: 'agTextColumnFilter',
+        //filterParams: {
+        //    suppressAndOrCondition: true
+        //},
         sortable: true,
         resizable: true
     },
