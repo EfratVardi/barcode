@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/BrowserPrint-3.0.216.min.js"></script>
+    <script src="js/zpl.js"></script>
 
 
     <!--<script>
@@ -35,6 +37,8 @@
 
 
     <script>
+        setupZPL()
+
         var end = new Date(2023, 06, 08);
         var Today = new Date()
         if (Today < end) {
@@ -201,26 +205,28 @@
             }
 
             function toPrint(task) {
-                var divName = "printableArea";
-                setTimeout(function () {
-                    document.getElementById("d1").innerHTML = fullName + " " + "מכיתה " + grade;
-                    if (task == 1)
-                        document.getElementById("d2").innerHTML = "     ביצעה את משימה" + " " + taskResults.name;
-                    else
-                        document.getElementById("d2").innerHTML = "     רכשה את מתנה " + " " + taskResults.name;
 
-                    document.getElementById("d3").innerHTML = "     סך הנקודות בחשבון" + " :" + sum;
 
-                    var printContents = document.getElementById(divName).innerHTML;
-                    var originalContents = document.body.innerHTML;
-                    document.body.innerHTML = printContents;
-                    window.print();
+                //var divName = "printableArea";
+                //setTimeout(function () {
+                //    document.getElementById("d1").innerHTML = fullName + " " + "מכיתה " + grade;
+                //    if (task == 1)
+                //        document.getElementById("d2").innerHTML = "     ביצעה את משימה" + " " + taskResults.name;
+                //    else
+                //        document.getElementById("d2").innerHTML = "     רכשה את מתנה " + " " + taskResults.name;
 
-                    document.body.innerHTML = originalContents;
-                    document.getElementById("line1").innerHTML = "!כרגע יש לך בחשבון " + sum + " נקודות ";
-                    document.getElementById("line2").innerHTML = "...אל תשכחי לקחת את האישור מהמדפסת";
-                    reset(4000);
-                }, 2000);
+                //    document.getElementById("d3").innerHTML = "     סך הנקודות בחשבון" + " :" + sum;
+
+                //    var printContents = document.getElementById(divName).innerHTML;
+                //    var originalContents = document.body.innerHTML;
+                //    document.body.innerHTML = printContents;
+                //    window.print();
+
+                //    document.body.innerHTML = originalContents;
+                //    document.getElementById("line1").innerHTML = "!כרגע יש לך בחשבון " + sum + " נקודות ";
+                //    document.getElementById("line2").innerHTML = "...אל תשכחי לקחת את האישור מהמדפסת";
+                //    reset(4000);
+                //}, 2000);
             }
         }
         else {
@@ -243,7 +249,13 @@
                 });
             }, 3500);
         }
+        function DeviceSelected(selected) {
+            onDeviceSelected(selected)
+        }
 
+         function print() {
+                   writeToSelectedPrinter("fdfd");
+        }
     </script>
 
     <!--<div id="printableArea" style="height:1px;color:transparent; border:solid;border-color:red;">
@@ -260,6 +272,10 @@
 
         <div id="d5" style="font-size:20px; font-family: Fb Magnolia;">להזמנות: אפרת מלכה 0504167969 211efrat@gmail.com</div>
     </div>-->
+    <button onclick="print()"></button>
+    <select id="selected_zpl_device" onchange="DeviceSelected(this)"
+            style="height: 45px; border: 1px solid; border-color:#a9cdcf; border-radius: 5px;"
+            class="col-span-4 place-self-center w-full"></select>
 
     <div class="background1">
         <div class="background2">
