@@ -1,8 +1,7 @@
 ﻿
 var scolumnDefs = [
     { headerName: "כיתה", field: "grade", editable: true },
-    { headerName: "שם פרטי", field: "first", editable: true },
-    { headerName: "משפחה", field: "last", editable: true },
+    { headerName: "שם", field: "name", editable: true },
     { headerName: "מספרי משימות", field: "tasksNumber" ,hide:true },
     { headerName: "שמות המשימות", field: "tasks" },
     { headerName: "סך נקודות", field: "points" }

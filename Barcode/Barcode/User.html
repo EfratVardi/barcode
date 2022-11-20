@@ -11,9 +11,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!--<script src="js/BrowserPrint-3.0.216.min.js"></script>
-    <script src="js/zpl.js"></script>-->
-
 
     <!--<script>
         document.addEventListener("keydown", (e) => {
@@ -37,17 +34,15 @@
 
 
     <script>
-        //setupZPL()
-
         var end = new Date(2023, 06, 08);
         var Today = new Date()
         if (Today < end) {
-            var tasks = JSON.parse(localStorage.getItem("tasks"));
+            var tasksExcel = JSON.parse(localStorage.getItem("tasks"));
+            var studentsExcel = JSON.parse(localStorage.getItem("students"));
+            var privateTasksExcel = JSON.parse(localStorage.getItem("privateTasks"));
+            var searchVal
             var products = [{}];
             var counter = 0;
-            var status = 0;
-            var fullName;
-            var grade;
             var lock;
             var sum = 0
             var returnval = 0;
@@ -55,15 +50,22 @@
             var myObj;
             var taskResults = "";
 
+            function onload() {
+                if (tasksExcel == null || studentsExcel == null || privateTasksExcel==null ) {
+                    showAlert("לא הועלו כל הקבצים!")
+                    reset(0);
+                    return;
+                }
+            }
+
             function sendToUpdate() {
                 counter = 0;
-                status = 0;
                 lock = 1;
-                var value = document.getElementById("barcode").value;
                 document.getElementById("barcode").value = "";
                 for (var i = 0; i < tasks.length; i++) {
-                    if (tasks[i]["code"] == value) {
+                    if (tasks[i]["code"] == searchVal) {
                         taskResults = tasks[i]
+                        break;
                     }
                 }
                 if (taskResults != "") {
@@ -72,14 +74,14 @@
                 }
                 else
                     for (var i = 0; i < products.length; i++) {
-                        if (products[i]["code"] == value) {
+                        if (products[i]["code"] == searchVal) {
                             taskResults = products[i]
+                            break;
                         }
                     }
                 if (taskResults == "") {
                     showAlert("קוד לא תקין, גשי למורה!")
                     reset(0);
-                    status = 0;
                     return;
                 }
                 else
@@ -101,7 +103,6 @@
                     if (results.tasksNumber.includes(taskResults.code)) {
                         showAlert("הי, אסור להגיש משימה פעמיים!");
                         reset(0);
-                        status = 0;
                         return;
                     }
                 }
@@ -109,6 +110,7 @@
                     if (myObj[i]["tz"] == results.tz) {
                         myObj[i].tasks += taskResults.name + ',';
                         myObj[i].tasksNumber += taskResults.code + ',';
+                        break;
                     }
                 }
 
@@ -121,30 +123,19 @@
 
             function searchInExcel() {
                 counter = 0;
-                status = 1;
-                var searchVal = document.getElementById("barcode").value;
                 document.getElementById("barcode").value = "";
-                myObj = JSON.parse(localStorage.getItem("students"));
-                if (myObj == null) {
-                    showAlert("לא הוזנו נתוני תלמידות, פני למורה!")
-                    reset(0);
-                    status = 0;
-                    return;
-                }
-                for (var i = 0; i < myObj.length; i++) {
-                    if (myObj[i]["tz"] == searchVal) {
-                        results = myObj[i];
+                for (var i = 0; i < studentsExcel.length; i++) {
+                    if (studentsExcel[i]["tz"] == searchVal) {
+                        results = studentsExcel[i];
+                        break;
                     }
                 }
                 if (results == "") {
                     showAlert("את לא מופיעה ברשימות. גשי למורה!")
                     reset(0);
-                    status = 0;
                     return;
                 }
-                fullName = results.first + "  " + results.last;
-                grade = results.grade;
-                document.getElementById("line1").innerHTML = "(: שלום  " + fullName;
+                document.getElementById("line1").innerHTML = "(: שלום  " + results.name;
                 document.getElementById("line2").innerHTML = "סרקי את הברקוד לעדכון משימה";
             }
 
@@ -158,9 +149,10 @@
                 counter += 1;
 
                 if (counter > 9 && lock != 1) {
-                    if (document.getElementById('barcode').value == 'moefm2583')
+                    searchVal = document.getElementById('barcode').value
+                    if (searchVal == '999999999')
                         login()
-                    else if (status == 0)
+                    else if (searchVal.startsWith('3') || searchVal.startsWith('2'))
                         searchInExcel();
                     else
                         sendToUpdate();
@@ -191,13 +183,13 @@
                 if (sum < 0) {
                     showAlert("אין לך מספיק נקודות בחשבון !")
                     reset(0);
-                    status = 0;
                     returnval = 1;
                     return;
                 }
                 for (var i = 0; i < myObj.length; i++) {
                     if (myObj[i]["tz"] == results.tz) {
                         myObj[i].points = sum;
+                        break;
                     }
                 }
                 localStorage.setItem("students", JSON.stringify(myObj));
@@ -207,7 +199,7 @@
             function toPrint(task) {
                 var divName = "printableArea";
                 setTimeout(function () {
-                    document.getElementById("d1").innerHTML = fullName + " " + "מכיתה " + grade;
+                    document.getElementById("d1").innerHTML = results.name + " " + "מכיתה " + results.grade;
                     if (task == 1)
                         document.getElementById("d2").innerHTML = "     ביצעה את משימה" + " " + taskResults.name;
                     else
@@ -239,21 +231,14 @@
         function showAlert(message) {
             document.querySelector(".modal-body").innerHTML = message;
             $(document).ready(function () {
-                $('#exampleModal').modal('show')
+                $('#modal').modal('show')
             });
             setTimeout(function () {
                 $(document).ready(function () {
-                    $('#exampleModal').modal('hide')
+                    $('#modal').modal('hide')
                 });
             }, 3500);
         }
-        //function DeviceSelected(selected) {
-        //    onDeviceSelected(selected)
-        //}
-
-        // function print() {
-        //           writeToSelectedPrinter("fdfd");
-        //}
     </script>
 
     <div id="printableArea" style="height:1px;color:transparent; border:solid;display:none">
@@ -270,12 +255,6 @@
 
         <div id="d5" style="font-size:20px; font-family: Fb Magnolia;">להזמנות: אפרת מלכה 0504167969 211efrat@gmail.com</div>
     </div>
-
-    <!--<button onclick="print()"></button>
-    <select id="selected_zpl_device" onchange="DeviceSelected(this)"
-            style="height: 45px; border: 1px solid; border-color:#a9cdcf; border-radius: 5px;"
-            class="col-span-4 place-self-center w-full"></select>-->
-
     <div class="background1">
         <div class="background2">
 
@@ -287,14 +266,13 @@
             <input type="text" class="my-input" id="barcode">
         </div>
     </div>
-    <button onclick="toPrint()"></button>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" style="direction: rtl" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content" style="direction:rtl">
+            <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">הודעת מערכת</h5>
+                    <h5 class="modal-title" id="modalLabel">הודעת מערכת</h5>
                 </div>
-                <div class="modal-body"> </div>
+                <div style="direction: rtl" class="modal-body"> </div>
             </div>
         </div>
     </div>

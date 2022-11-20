@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="xlsx.full.min.js"></script>
 
 
     <script>
@@ -38,6 +39,12 @@
                             }
                             localStorage["tasks"] = json_object;
                         }
+                        else if (file.name.includes("privateTasks")) {
+                            if (localStorage.getItem("privateTasks") == null) {
+                                localStorage.setItem("privateTasks", "");
+                            }
+                            localStorage["privateTasks"] = json_object;
+                        }
                     })
                 };
                 reader.onerror = function (ex) {
@@ -64,6 +71,8 @@
             <div>
                 <div><label style="font-size: 13px;">תלמידות </label><input id="uploadStudents" type=file name="files[]"></div>
                 <label style="font-size: 13px;">משימות </label><input id="uploadTasks" type=file name="files[]">
+                <label style="font-size: 13px;">משימות אישיות </label><input id="uploadPrivateTasks" type=file name="files[]">
+
             </div>
         </div>
     </div>
@@ -72,6 +81,7 @@
     <script>
         document.getElementById('uploadStudents').addEventListener('change', handleFileSelect, false);
         document.getElementById('uploadTasks').addEventListener('change', handleFileSelect, false);
+        document.getElementById('uploadPrivateTasks').addEventListener('change', handleFileSelect, false);
     </script>
 </body>
 </html>
