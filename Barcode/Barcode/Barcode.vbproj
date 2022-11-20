@@ -103,8 +103,6 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="jquery.min.js" />
-    <Content Include="JSPM1.html" />
-    <Content Include="JSPrintManager.js" />
     <Content Include="js\bootstrap.bundle.js" />
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\bootstrap.js" />

@@ -12,239 +12,215 @@
     <script src="jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-    <!--<script>
-        document.addEventListener("keydown", (e) => {
-            // USE THIS TO DISABLE CONTROL AND ALL FUNCTION KEYS
-            //if (e.ctrlKey || (e.keyCode >= 112 && e.keyCode <= 123)) {
-            // THIS WILL ONLY DISABLE CONTROL AND F12
-            if (e.ctrlKey || e.keyCode == 123) {
-                e.stopPropagation();
+    <script>
+        var end = new Date(2020, 06, 08);
+        var Today = new Date()
+        var tasksExcel = JSON.parse(localStorage.getItem("tasks"));
+        var studentsExcel = JSON.parse(localStorage.getItem("students"));
+        var privateTasksExcel = JSON.parse(localStorage.getItem("privateTasks"));
+        var productsExcel = [{}];
+        var searchVal
+        var counter = 0;
+        var lock;
+        var studentResult = ""
+        var result = "";
+        var sum = 0
+        var returnval = 0;
+
+        function onload() {
+            if (Today > end) {
+                showAlert("מצטערים. פג תוקף הרשיון!")
+            }
+            if (tasksExcel == null || studentsExcel == null || privateTasksExcel == null) {
+                showAlert("לא הועלו כל הקבצים!")
+            }
+        }
+
+        document.addEventListener("keypress", function (e) {
+            if (e.target.tagName !== "INPUT") {
+                var input = document.querySelector(".my-input");
+                input.focus();
+                input.value = e.key;
                 e.preventDefault();
             }
-        }
-        );
-    </script>
+            counter += 1;
 
-
-    <script>
-        document.addEventListener("contextmenu", function (e) {
-            e.preventDefault();
-        }, false);
-    </script>-->
-
-
-    <script>
-        var end = new Date(2023, 06, 08);
-        var Today = new Date()
-        if (Today < end) {
-            var tasksExcel = JSON.parse(localStorage.getItem("tasks"));
-            var studentsExcel = JSON.parse(localStorage.getItem("students"));
-            var privateTasksExcel = JSON.parse(localStorage.getItem("privateTasks"));
-            var products = [{}];
-            var searchVal
-            var counter = 0;
-            var lock;
-            var studentResult = ""
-            var taskResult = "";
-            var privateTaskResult = ""
-            var productResult = ""
-            var sum = 0
-            var returnval = 0;
-
-            function onload() {
-                if (tasksExcel == null || studentsExcel == null || privateTasksExcel == null) {
-                    showAlert("לא הועלו כל הקבצים!")
-                    reset(0);
-                    return;
-                }
-            }
-
-            function sendToUpdate() {
-                counter = 0;
-                lock = 1;
-                document.getElementById("barcode").value = "";
-                if (searchVal.startsWith(4)) {
-                    for (var i = 0; i < tasks.length; i++) {
-                        if (tasks[i]["code"] == searchVal) {
-                            taskResult = tasks[i]
-                            break;
-                        }
-                    }
-                }
-                else if (searchVal.startsWith(5)) {
-                    for (var i = 0; i < tasks.length; i++) {
-                        if (privateTasks[i]["code"] == searchVal) {
-                            privateTasksResult = privateTasks[i]
-                            break;
-                        }
-                    }
-                }
-
-                if (taskResult != "") {
-                    updateTask();
-                    return;
-                }
+            if (counter > 9 && lock != 1) {
+                searchVal = document.getElementById('barcode').value
+                if (searchVal == '999999999')
+                    login()
+                else if (searchVal.startsWith('3') || searchVal.startsWith('2'))
+                    searchInExcel();
                 else
-                    for (var i = 0; i < products.length; i++) {
-                        if (products[i]["code"] == searchVal) {
-                            taskResults = products[i]
-                            break;
-                        }
-                    }
-                if (taskResult == "") {
-                    showAlert("קוד לא תקין, גשי למורה!")
-                    reset(0);
-                    return;
-                }
-                else
-                    updateBuy()
+                    sendToUpdate();
             }
-
-            function updateBuy() {
-                savePoints(taskResult.points);
-                if (returnval == 1)
-                    return;
-                document.getElementById("line1").innerHTML = "! המוצר נרכש בהצלחה ";
-                document.getElementById("line2").innerHTML = "מיד תועברי להדפסת אישור";
-                document.getElementById("gif").src = 'like.gif';
-                toPrint(0);
-            };
-
-            function updateTask() {
-                if (taskResult.code != "358312007" && taskResult.code != "358312008" && taskResult.code != "358312009" && taskResult.code != "358312010") {
-                    if (studentResult.tasksNumber.includes(taskResult.code)) {
-                        showAlert("הי, אסור להגיש משימה פעמיים!");
-                        reset(0);
-                        return;
-                    }
-                }
-                for (var i = 0; i < myObj.length; i++) {
-                    if (studentsExcel[i]["tz"] == studentResult.tz) {
-                        studentsExcel[i].tasks += taskResult.name + ',';
-                        studentsExcel[i].tasksNumber += taskResult.code + ',';
-                        break;
-                    }
-                }
-
-                savePoints(taskResult.points);
-                document.getElementById("line1").innerHTML = "הידד" + "! " + "ביצעת את משימה" + " " + taskResult.name;
-                document.getElementById("line2").innerHTML = "מיד תועברי להדפסת אישור";
-                document.getElementById("gif").src = 'like.gif';
-                toPrint(1);
-            }
-
-            function searchInExcel() {
-                counter = 0;
+            if (lock == 1)
                 document.getElementById("barcode").value = "";
-                for (var i = 0; i < studentsExcel.length; i++) {
-                    if (studentsExcel[i]["tz"] == searchVal) {
-                        results = studentsExcel[i];
-                        break;
-                    }
-                }
-                if (results == "") {
-                    showAlert("את לא מופיעה ברשימות. גשי למורה!")
-                    reset(0);
-                    return;
-                }
-                document.getElementById("line1").innerHTML = "(: שלום  " + result.name;
-                document.getElementById("line2").innerHTML = "סרקי את הברקוד לעדכון משימה";
-            }
-
-            document.addEventListener("keypress", function (e) {
-                if (e.target.tagName !== "INPUT") {
-                    var input = document.querySelector(".my-input");
-                    input.focus();
-                    input.value = e.key;
-                    e.preventDefault();
-                }
-                counter += 1;
-
-                if (counter > 9 && lock != 1) {
-                    searchVal = document.getElementById('barcode').value
-                    if (searchVal == '999999999')
-                        login()
-                    else if (searchVal.startsWith('3') || searchVal.startsWith('2'))
-                        searchInExcel();
-                    else
-                        sendToUpdate();
-                }
-                if (lock == 1)
-                    document.getElementById("barcode").value = "";
-            });
-
-            function reset(time) {
-                setTimeout(function () {
-
-                    document.getElementById("line1").innerHTML = "ברוכה הבאה ";
-                    document.getElementById("line2").innerHTML = "העבירי את הכרטיס האישי שלך בסורק הברקוד";
-                    document.getElementById("gif").src = 'barcode.gif';
-                    document.getElementById("barcode").value = "";
-                    tasksExcel = JSON.parse(localStorage.getItem("tasks"));
-                    studentsExcel = JSON.parse(localStorage.getItem("students"));
-                    privateTasksExcel = JSON.parse(localStorage.getItem("privateTasks"));
-                    products = [{}];
-                    counter = 0;
-                    lock = 0;
-                    studentResult = ""
-                    taskResult = "";
-                    privateTaskResult = ""
-                    productResult = ""
-                    sum = 0
-                    returnval = 0;
-
-                }, time);
-            }
-
-            function savePoints(points) {
-
-                sum = parseInt(points) + parseInt(studentResult.points);
-                if (sum < 0) {
-                    showAlert("אין לך מספיק נקודות בחשבון !")
-                    reset(0);
-                    returnval = 1;
-                    return;
-                }
-                for (var i = 0; i < studentsExcel.length; i++) {
-                    if (studentsExcel[i]["tz"] == results.tz) {
-                        studentsExcel[i].points = sum;
-                        break;
-                    }
-                }
-                localStorage.setItem("students", JSON.stringify(studentsExcel));
-            }
-
-            function toPrint(task) {
-                var divName = "printableArea";
-                setTimeout(function () {
-                    document.getElementById("d1").innerHTML = studentResult.name + " " + "מכיתה " + studentResult.grade;
-                    if (task == 1)
-                        document.getElementById("d2").innerHTML = "     ביצעה את משימה" + " " + taskResult.name;
-                    else
-                        document.getElementById("d2").innerHTML = "     רכשה את מתנה " + " " + taskResult.name;
-
-                    document.getElementById("d3").innerHTML = "     סך הנקודות בחשבון" + " :" + sum;
-
-                    var printContents = document.getElementById(divName).innerHTML;
-                    var originalContents = document.body.innerHTML;
-                    document.body.innerHTML = printContents;
-                    window.print();
-
-                    document.body.innerHTML = originalContents;
-                    document.getElementById("line1").innerHTML = "!כרגע יש לך בחשבון " + sum + " נקודות ";
-                    document.getElementById("line2").innerHTML = "...אל תשכחי לקחת את האישור מהמדפסת";
-                    reset(4000);
-                }, 2000);
-            }
-        }
-        else {
-            showAlert("מצטערים. פג תוקף הרשיון!")
-        }
+        });
 
         function login() {
             document.getElementById("barcode").value = "";
             window.location.href = 'Manage.html';
         }
+
+        function searchInExcel() {
+            counter = 0;
+            document.getElementById("barcode").value = "";
+            for (var i = 0; i < studentsExcel.length; i++) {
+                if (studentsExcel[i]["tz"] == searchVal) {
+                    studentResult = studentsExcel[i];
+                    break;
+                }
+            }
+            if (studentResult == "") {
+                showAlert("את לא מופיעה ברשימות. גשי למורה!")
+            }
+            document.getElementById("line1").innerHTML = "(: שלום  " + studentResult.name;
+            document.getElementById("line2").innerHTML = "סרקי את הברקוד לעדכון משימה";
+        }
+
+        function sendToUpdate() {
+            counter = 0;
+            lock = 1;
+            document.getElementById("barcode").value = "";
+            if (searchVal.startsWith(4)) {
+                for (var i = 0; i < tasksExcel.length; i++) {
+                    if (tasksExcel[i]["code"] == searchVal) {
+                        result = tasksExcel[i]
+                        break;
+                    }
+                }
+                if (result != "") {
+                    updateTask();
+                    return;
+                }
+            }
+            else if (searchVal.startsWith(5)) {
+                for (var i = 0; i < privateTasksExcel.length; i++) {
+                    if (privateTasksExcel[i]["code"] == searchVal) {
+                        result = privateTasksExcel[i]
+                        break;
+                    }
+                }
+                if (result != "") {
+                    updatePrivateTask();
+                    return;
+                }
+            }
+
+            else if (searchVal.startsWith(6)) {
+                for (var i = 0; i < productsExcel.length; i++) {
+                    if (productsExcel[i]["code"] == searchVal) {
+                        result = productsExcel[i]
+                        break;
+                    }
+                }
+                if (result != "") {
+                    updateBuy()
+                    return;
+                }
+            }
+            if (result == "") {
+                showAlert("קוד לא תקין, גשי למורה!")
+            }
+        }
+
+        function updateTask() {
+            if (studentResult.tasksNumber.includes(result.code)) {
+                showAlert("הי, אסור להגיש משימה פעמיים!");
+            }
+
+            for (var i = 0; i < studentsExcel.length; i++) {
+                if (studentsExcel[i]["tz"] == studentResult.tz) {
+                    studentsExcel[i].tasks += result.name + ',';
+                    studentsExcel[i].tasksNumber += result.code + ',';
+                    break;
+                }
+            }
+
+            savePoints(result.points);
+            document.getElementById("line1").innerHTML = "הידד" + "! " + "ביצעת את משימה" + " " + result.name;
+            document.getElementById("line2").innerHTML = "מיד תועברי להדפסת אישור";
+            document.getElementById("gif").src = 'like.gif';
+            toPrint(1);
+        }
+
+        function updatePrivateTask() {
+            if (result.used == 1) {
+                showAlert("הי, כבר תיקפת משימה זו!");
+            }
+
+            for (var i = 0; i < studentsExcel.length; i++) {
+                if (studentsExcel[i]["tz"] == studentResult.tz) {
+                    studentsExcel[i].tasks += result.name + ',';
+                    studentsExcel[i].tasksNumber += result.code + ',';
+                    break;
+                }
+            }
+            for (var i = 0; i < privateTasksExcel.length; i++) {
+                if (privateTasksExcel[i]["code"] == result.code) {
+                    privateTasksExcel[i].used = 1
+                    break;
+                }
+            }
+            localStorage.setItem("privatTasks", JSON.stringify(privateTasksExcel));
+
+            savePoints(result.points);
+            document.getElementById("line1").innerHTML = "הידד" + "! " + "ביצעת את משימה" + " " + result.name;
+            document.getElementById("line2").innerHTML = "מיד תועברי להדפסת אישור";
+            document.getElementById("gif").src = 'like.gif';
+            toPrint(1);
+        }
+
+        function updateBuy() {
+            savePoints(result.points);
+            if (returnval == 1)
+                return;
+            document.getElementById("line1").innerHTML = "! המוצר נרכש בהצלחה ";
+            document.getElementById("line2").innerHTML = "מיד תועברי להדפסת אישור";
+            document.getElementById("gif").src = 'like.gif';
+            toPrint(0);
+        };
+
+        function savePoints(points) {
+
+            sum = parseInt(points) + parseInt(studentResult.points);
+            if (sum < 0) {
+                showAlert("אין לך מספיק נקודות בחשבון !")
+                returnval = 1;
+            }
+            for (var i = 0; i < studentsExcel.length; i++) {
+                if (studentsExcel[i]["tz"] == studentResult.tz) {
+                    studentsExcel[i].points = sum;
+                    break;
+                }
+            }
+            localStorage.setItem("students", JSON.stringify(studentsExcel));
+        }
+
+        function toPrint(task) {
+            var divName = "printableArea";
+            setTimeout(function () {
+                document.getElementById("d1").innerHTML = studentResult.name + " " + "מכיתה " + studentResult.grade;
+                if (task == 1)
+                    document.getElementById("d2").innerHTML = "     ביצעה את משימה" + " " + result.name;
+                else
+                    document.getElementById("d2").innerHTML = "     רכשה את מתנה " + " " + result.name;
+
+                document.getElementById("d3").innerHTML = "     סך הנקודות בחשבון" + " :" + sum;
+
+                var printContents = document.getElementById(divName).innerHTML;
+                var originalContents = document.body.innerHTML;
+                document.body.innerHTML = printContents;
+                window.print();
+
+                document.body.innerHTML = originalContents;
+                document.getElementById("line1").innerHTML = "!כרגע יש לך בחשבון " + sum + " נקודות ";
+                document.getElementById("line2").innerHTML = "...אל תשכחי לקחת את האישור מהמדפסת";
+                reset(4000);
+            }, 2000);
+        }
+
 
         function showAlert(message) {
             document.querySelector(".modal-body").innerHTML = message;
@@ -256,7 +232,31 @@
                     $('#modal').modal('hide')
                 });
             }, 3500);
+            reset(0);
+            return;
         }
+
+        function reset(time) {
+            setTimeout(function () {
+
+                document.getElementById("line1").innerHTML = "ברוכה הבאה ";
+                document.getElementById("line2").innerHTML = "העבירי את הכרטיס האישי שלך בסורק הברקוד";
+                document.getElementById("gif").src = 'barcode.gif';
+                document.getElementById("barcode").value = "";
+                tasksExcel = JSON.parse(localStorage.getItem("tasks"));
+                studentsExcel = JSON.parse(localStorage.getItem("students"));
+                privateTasksExcel = JSON.parse(localStorage.getItem("privateTasks"));
+                products = [{}];
+                counter = 0;
+                lock = 0;
+                studentResult = ""
+                result = ""
+                sum = 0
+                returnval = 0;
+
+            }, time);
+        }
+
     </script>
 
     <div id="printableArea" style="height:1px;color:transparent; border:solid;display:none">
@@ -290,7 +290,7 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="modalLabel">הודעת מערכת</h5>
                 </div>
-                <div style="direction: rtl" class="modal-body"> </div>
+                <div class="modal-body"> </div>
             </div>
         </div>
     </div>
