@@ -39,11 +39,11 @@
                             }
                             localStorage["tasks"] = json_object;
                         }
-                        else if (file.name.includes("privateTasks")) {
-                            if (localStorage.getItem("privateTasks") == null) {
-                                localStorage.setItem("privateTasks", "");
+                        else if (file.name.includes("uniqTasks")) {
+                            if (localStorage.getItem("uniqTasks") == null) {
+                                localStorage.setItem("uniqTasks", "");
                             }
-                            localStorage["privateTasks"] = json_object;
+                            localStorage["uniqTasks"] = json_object;
                         }
                     })
                 };
@@ -71,7 +71,7 @@
             <div>
                 <div><label style="font-size: 13px;">תלמידות </label><input id="uploadStudents" type=file name="files[]"></div>
                 <label style="font-size: 13px;">משימות </label><input id="uploadTasks" type=file name="files[]">
-                <label style="font-size: 13px;">משימות אישיות </label><input id="uploadPrivateTasks" type=file name="files[]">
+                <label style="font-size: 13px;">משימות אישיות </label><input id="uploaduniqTasks" type=file name="files[]">
 
             </div>
         </div>
@@ -81,7 +81,7 @@
     <script>
         document.getElementById('uploadStudents').addEventListener('change', handleFileSelect, false);
         document.getElementById('uploadTasks').addEventListener('change', handleFileSelect, false);
-        document.getElementById('uploadPrivateTasks').addEventListener('change', handleFileSelect, false);
+        document.getElementById('uploaduniqTasks').addEventListener('change', handleFileSelect, false);
     </script>
 </body>
 </html>
