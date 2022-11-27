@@ -13,12 +13,12 @@
     color: black;
 }
 
-.text1 {
+#line1 {
     font-size: 4.5vw;
     font-weight: 400;
 }
 
-.text2 {
+#line2 {
     font-size: 3vw;
     font-weight: 300;
 }
@@ -36,8 +36,8 @@ input:focus {
     outline: none;
     color: transparent;
 }
-.modal {
-  
+#printableArea {
+   
 }
 
 

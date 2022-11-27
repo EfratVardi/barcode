@@ -111,7 +111,6 @@
     <Content Include="js\zpl.js" />
     <Content Include="Manage.html" />
     <Content Include="like.gif" />
-    <Content Include="logo.gif" />
     <Content Include="up.gif" />
     <Content Include="User.html" />
     <Content Include="ManageStyleSheet.css" />

@@ -7,24 +7,16 @@ var scolumnDefs = [
     { headerName: "סך נקודות", field: "points" }
 ];
 
-var tcolumnDefs = [
-    { headerName: "שם משימה", field: "name", editable: true },
-    { headerName: "שווי משימה", field: "points", editable: true },
-    { headerName: "תאריך להגשה", field: "date", editable: true },
-    { headerName: "שעה להגשה", field: "hour", editable: true }
-];
-
 var srowData = JSON.parse(localStorage.getItem("students"))
-var trowData = JSON.parse(localStorage.getItem("tasks"))
 
 
 var sgridOptions = {
     columnDefs: scolumnDefs,
     defaultColDef: {
-        //filter: 'agTextColumnFilter',
-        //filterParams: {
-        //    suppressAndOrCondition: true
-        //},
+        filter: 'agTextColumnFilter',
+        filterParams: {
+            suppressAndOrCondition: true
+        },
         sortable: true,
         resizable: true
     },
@@ -33,24 +25,7 @@ var sgridOptions = {
     onFirstDataRendered: onFirstDataRendered,
 };
 
-var tgridOptions = {
-    columnDefs: tcolumnDefs,
-    defaultColDef: {
-        filter: true,
-        sortable: true,
-        resizable: true
-    },
-    enableRtl: true,
-    rowData: trowData,
-    onFirstDataRendered: onFirstDataRendered
-};
 function onFirstDataRendered(params) {
-
-    tgridOptions.api.sizeColumnsToFit({
-        defaultMinWidth: 150,
-        columnLimits: [{ key: 'tasks', minWidth: 300 }],
-    });
-
     sgridOptions.api.sizeColumnsToFit({
         defaultMinWidth: 150,
         columnLimits: [{ key: 'tasks', minWidth: 300 }],
@@ -65,7 +40,3 @@ document.addEventListener('DOMContentLoaded', function () {
     new agGrid.Grid(gridDiv, sgridOptions);
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    var gridDiv = document.querySelector('#tasksGrid');
-    new agGrid.Grid(gridDiv, tgridOptions);
-});
