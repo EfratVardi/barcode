@@ -1,5 +1,5 @@
 ﻿
-var scolumnDefs = [
+var columnDefs = [
     { headerName: "כיתה", field: "grade", editable: true },
     { headerName: "שם", field: "name", editable: true },
     { headerName: "מספרי משימות", field: "tasksNumber" ,hide:true },
@@ -7,36 +7,33 @@ var scolumnDefs = [
     { headerName: "סך נקודות", field: "points" }
 ];
 
-var srowData = JSON.parse(localStorage.getItem("students"))
+var rowData = JSON.parse(localStorage.getItem("students"))
 
 
-var sgridOptions = {
-    columnDefs: scolumnDefs,
+var gridOptions = {
+    columnDefs: columnDefs,
     defaultColDef: {
-        filter: 'agTextColumnFilter',
-        filterParams: {
-            suppressAndOrCondition: true
-        },
+        filter:true,
         sortable: true,
-        resizable: true
+        resizable: true,
     },
     enableRtl: true,
-    rowData: srowData,
+    rowData: rowData,
     onFirstDataRendered: onFirstDataRendered,
 };
 
 function onFirstDataRendered(params) {
-    sgridOptions.api.sizeColumnsToFit({
+    gridOptions.api.sizeColumnsToFit({
         defaultMinWidth: 150,
-        columnLimits: [{ key: 'tasks', minWidth: 300 }],
+        columnLimits: [{ key: 'tasks', minWidth: 800 }, { key: 'points', maxWidth: 200 }],
     });
 }
 function sExport() {
-    sgridOptions.api.exportDataAsCsv();
+    gridOptions.api.exportDataAsCsv();
 }
 
 document.addEventListener('DOMContentLoaded', function () {
     var gridDiv = document.querySelector('#studentsGrid');
-    new agGrid.Grid(gridDiv, sgridOptions);
+    new agGrid.Grid(gridDiv, gridOptions);
 });
 
