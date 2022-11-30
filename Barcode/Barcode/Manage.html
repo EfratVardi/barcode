@@ -13,24 +13,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-        function New() {
-            var rowData = JSON.parse(localStorage.getItem("students"))
-            var tz = Math.floor(Math.random() * (399999999 - 200000000 + 1) + 200000000)
-            for (var i = 0; i < rowData.length; i++) {
-                while (rowData[i]["tz"] == tz) {
-                    tz = Math.floor(Math.random() * (399999999 - 200000000 + 1) + 200000000)
-                    i = 0
-                }
-            }
-            rowData.unshift({
-                grade: 'שורה חדשה', name: 'שורה חדשה', tz: tz, barcode: '',
-                points: 0, tasks: ",", tasksNumber: ","
-            })
-            localStorage.setItem("students", JSON.stringify(rowData));
-            gridOptions.api.setRowData(rowData);
-        }
-    </script>
+
     <div class="background1">
         <div class="background2">
             <div class="text">

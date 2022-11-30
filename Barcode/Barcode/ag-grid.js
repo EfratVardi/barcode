@@ -10,14 +10,14 @@ var columnDefs = [
 
 var rowData = JSON.parse(localStorage.getItem("students"))
 
-
 var gridOptions = {
     columnDefs: columnDefs,
     defaultColDef: {
         filter: 'agTextColumnFilter',
         filterParams: {
             suppressAndOrCondition: true
-        },        sortable: true,
+        },
+        sortable: true,
         resizable: true,
     },
     enableRtl: true,
@@ -32,10 +32,29 @@ function onFirstDataRendered(params) {
         columnLimits: [{ key: 'tasks', minWidth: 800 }, { key: 'points', maxWidth: 200 }],
     });
 }
-function onCellEditingStopped(params) {
-    localStorage.setItem("students", JSON.stringify(rowData));
 
+function onCellEditingStopped(params) {
+    localStorage.setItem("students", JSON.stringify(gridOptions.rowData));
 }
+
+function New() {
+    var students = JSON.parse(localStorage.getItem("students"))
+    var tz = Math.floor(Math.random() * (399999999 - 200000000 + 1) + 200000000)
+    for (var i = 0; i < students.length; i++) {
+        while (students[i]["tz"] == tz) {
+            tz = Math.floor(Math.random() * (399999999 - 200000000 + 1) + 200000000)
+            i = 0
+        }
+    }
+    students.unshift({
+        grade: 'שורה חדשה', name: 'שורה חדשה', tz: tz, barcode: '',
+        points: 0, tasks: ",", tasksNumber: ","
+    })
+    localStorage.setItem("students", JSON.stringify(students));
+    gridOptions.rowData = students;
+    gridOptions.api.setRowData(students);
+}
+
 function Export() {
     gridOptions.api.exportDataAsCsv();
 }

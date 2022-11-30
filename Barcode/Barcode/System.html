@@ -19,7 +19,6 @@
                 document.getElementById("title").value = localStorage.getItem("title")
             if (localStorage.getItem("date"))
                 document.getElementById("date").value = localStorage.getItem("date")
-            files = "stu.xlxs"
         }
 
         var json_object;
@@ -87,27 +86,47 @@
             <div class="text">
                 <div id="line1">הגדרות המערכת</div>
                 <!--<label>תלמידות</label>
-        <input id="uploadStudents" type=file name="files[]">
-        <label>משימות</label>
-        <input id="uploadTasks" type=file name="files[]">
-        <label>משימות אישיות</label>
-        <input id="uploaduniqTasks" type=file name="files[]">
-        <label>עדכון כותרת</label>
-        <input type="text" id="title"><button onclick="updateTitle()">עדכן</button>
-        <label>תאריך אחרון</label>
-        <input type="date" id="date"><button onclick="updateDate()">עדכן</button>-->
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <input id="uploadStudents" type=file name="files[]">
+    <label>משימות</label>
+    <input id="uploadTasks" type=file name="files[]">
+    <label>משימות אישיות</label>
+    <input id="uploaduniqTasks" type=file name="files[]">
+    <label>עדכון כותרת</label>
+    <input type="text" id="title"><button onclick="updateTitle()">עדכן</button>
+    <label>תאריך אחרון</label>
+    <input type="date" id="date"><button onclick="updateDate()">עדכן</button>-->
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="uploadStudents" class="form-label">תלמידות</label>
+                            <input type=file class="form-control" id="uploadStudents" name="files[]">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="uploadTasks" class="form-label">משימות</label>
+                            <input type=file class="form-control" id="uploadTasks" name="files[]">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="uploaduniqTasks" class="form-label">משימות אישיות</label>
+                            <input type=file class="form-control" id="uploaduniqTasks" name="files[]">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="title" class="form-label">כותרת</label>
+                            <input type="text" class="form-control" id="title">
+                            <button onclick="updateTitle()">עדכן</button>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="date" class="form-label">תוקף</label>
+                            <input type="date" class="form-control" id="date">
+                            <button onclick="updateDate()">עדכן</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-    </div>
 
+    </div>
 
     <script>
         document.getElementById('uploadStudents').addEventListener('change', handleFileSelect, false);
