@@ -5,6 +5,7 @@
     <title>הגדרות המערכת</title>
 </head>
 <body onload="onload()">
+
     <link href="SystemStyleSheet.css" rel="stylesheet" />
     <link href="MainStyleSheet.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -12,14 +13,13 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="xlsx.full.min.js"></script>
 
-
     <script>
         function onload() {
             if (localStorage.getItem("title"))
                 document.getElementById("title").value = localStorage.getItem("title")
             if (localStorage.getItem("date"))
                 document.getElementById("date").value = localStorage.getItem("date")
-            files="stu.xlxs"
+            files = "stu.xlxs"
         }
 
         var json_object;
@@ -86,15 +86,24 @@
         <div class="background2">
             <div class="text">
                 <div id="line1">הגדרות המערכת</div>
-                <img src="up.gif" class="gif" id="gif" />
+                <!--<label>תלמידות</label>
+        <input id="uploadStudents" type=file name="files[]">
+        <label>משימות</label>
+        <input id="uploadTasks" type=file name="files[]">
+        <label>משימות אישיות</label>
+        <input id="uploaduniqTasks" type=file name="files[]">
+        <label>עדכון כותרת</label>
+        <input type="text" id="title"><button onclick="updateTitle()">עדכן</button>
+        <label>תאריך אחרון</label>
+        <input type="date" id="date"><button onclick="updateDate()">עדכן</button>-->
             </div>
-            <div>
-                <div><label style="font-size: 13px;">תלמידות</label><input id="uploadStudents" type=file name="files[]"></div>
-                <label style="font-size: 13px;">משימות</label><input id="uploadTasks" type=file name="files[]">
-                <label style="font-size: 13px;">משימות אישיות</label><input id="uploaduniqTasks" type=file name="files[]">
-                <label style="font-size: 13px;">עדכון כותרת</label><input type="text" id="title"><button onclick="updateTitle()">עדכן</button>
-                <label style="font-size: 13px;">תאריך אחרון</label><input type="date" id="date"><button onclick="updateDate()">עדכן</button>
-
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
         </div>
     </div>

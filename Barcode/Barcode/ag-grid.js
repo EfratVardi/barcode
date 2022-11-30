@@ -1,6 +1,7 @@
 ﻿
 var columnDefs = [
     { headerName: "כיתה", field: "grade", editable: true },
+    { headerName: "תעודת זהות", field: "tz"},
     { headerName: "שם", field: "name", editable: true },
     { headerName: "מספרי משימות", field: "tasksNumber" ,hide:true },
     { headerName: "שמות המשימות", field: "tasks" },
@@ -13,13 +14,16 @@ var rowData = JSON.parse(localStorage.getItem("students"))
 var gridOptions = {
     columnDefs: columnDefs,
     defaultColDef: {
-        filter:true,
-        sortable: true,
+        filter: 'agTextColumnFilter',
+        filterParams: {
+            suppressAndOrCondition: true
+        },        sortable: true,
         resizable: true,
     },
     enableRtl: true,
     rowData: rowData,
     onFirstDataRendered: onFirstDataRendered,
+    onCellEditingStopped :onCellEditingStopped
 };
 
 function onFirstDataRendered(params) {
@@ -28,7 +32,11 @@ function onFirstDataRendered(params) {
         columnLimits: [{ key: 'tasks', minWidth: 800 }, { key: 'points', maxWidth: 200 }],
     });
 }
-function sExport() {
+function onCellEditingStopped(params) {
+    localStorage.setItem("students", JSON.stringify(rowData));
+
+}
+function Export() {
     gridOptions.api.exportDataAsCsv();
 }
 
