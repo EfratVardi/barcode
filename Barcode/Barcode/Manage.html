@@ -8,19 +8,19 @@
 
     <link href="ManageStyleSheet.css" rel="stylesheet" />
     <link href="MainStyleSheet.css" rel="stylesheet" />
-    <script src="ag-grid-community.min.js"></script>
-    <script src="ag-grid.js"></script>
+    <script src="js/ag-grid-community.min.js"></script>
+    <script src="js/ag-grid.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
 
     <div class="background1">
         <div class="background2">
             <div class="text">
                 <div id="line1">ברוכה הבאה לממשק ניהול</div>
                 <div id="line2">כאן אפשר לצפות, לערוך ולהוריד את הנתונים</div>
-                <div class="button"><button type="button" onclick="sExport()">ייצוא לאקסל</button></div>
+                <img onclick="Export()" src="resources/file-earmark-excel.svg" />
+                <img onclick="New()" src="resources/file-plus.svg" />
                 <div id="studentsGrid" style="width:100%" class="ag-theme-alpine"></div>
             </div>
         </div>

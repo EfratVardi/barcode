@@ -92,26 +92,28 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ag-grid-community.min.js" />
-    <Content Include="ag-grid.js" />
-    <Content Include="background.jpg" />
-    <Content Include="barcode.gif" />
     <Content Include="css\bootstrap-grid.css" />
     <Content Include="css\bootstrap-grid.min.css" />
     <Content Include="css\bootstrap-reboot.css" />
     <Content Include="css\bootstrap-reboot.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
-    <Content Include="jquery.min.js" />
+    <Content Include="Expired.html" />
+    <Content Include="js\ag-grid-community.min.js" />
+    <Content Include="js\ag-grid.js" />
     <Content Include="js\bootstrap.bundle.js" />
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\BrowserPrint-3.0.216.min.js" />
-    <Content Include="js\zpl.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\xlsx.full.min.js" />
     <Content Include="Manage.html" />
-    <Content Include="like.gif" />
-    <Content Include="up.gif" />
+    <Content Include="resources\background.jpg" />
+    <Content Include="resources\barcode.gif" />
+    <Content Include="resources\file-earmark-excel.svg" />
+    <Content Include="resources\file-plus.svg" />
+    <Content Include="resources\like.gif" />
     <Content Include="User.html" />
     <Content Include="ManageStyleSheet.css" />
     <Content Include="MainStyleSheet.css" />
@@ -119,7 +121,6 @@
     <Content Include="UserStyleSheet.css" />
     <Content Include="System.html" />
     <Content Include="Web.config" />
-    <Content Include="xlsx.full.min.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -161,6 +162,11 @@
     <Content Include="js\bootstrap.bundle.min.js.map" />
     <Content Include="js\bootstrap.js.map" />
     <Content Include="js\bootstrap.min.js.map" />
+    <Content Include="files\students.xlsx" />
+    <Content Include="files\tasks.xlsx" />
+    <Content Include="files\uniqTasks.xlsx" />
+    <Content Include="files\ישיבת דירקטוריון מספר 1.docx" />
+    <Content Include="files\משימות לשיפור.docx" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

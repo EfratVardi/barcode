@@ -4,22 +4,21 @@
     <meta charset="utf-8" />
     <title>הגדרות המערכת</title>
 </head>
-<body onload="onload()">
+<body onload="onLoad()">
+
     <link href="SystemStyleSheet.css" rel="stylesheet" />
     <link href="MainStyleSheet.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="xlsx.full.min.js"></script>
-
+    <script src="js/xlsx.full.min.js"></script>
 
     <script>
-        function onload() {
+        function onLoad() {
             if (localStorage.getItem("title"))
                 document.getElementById("title").value = localStorage.getItem("title")
             if (localStorage.getItem("date"))
                 document.getElementById("date").value = localStorage.getItem("date")
-            files="stu.xlxs"
         }
 
         var json_object;
@@ -86,19 +85,52 @@
         <div class="background2">
             <div class="text">
                 <div id="line1">הגדרות המערכת</div>
-                <img src="up.gif" class="gif" id="gif" />
-            </div>
-            <div>
-                <div><label style="font-size: 13px;">תלמידות</label><input id="uploadStudents" type=file name="files[]"></div>
-                <label style="font-size: 13px;">משימות</label><input id="uploadTasks" type=file name="files[]">
-                <label style="font-size: 13px;">משימות אישיות</label><input id="uploaduniqTasks" type=file name="files[]">
-                <label style="font-size: 13px;">עדכון כותרת</label><input type="text" id="title"><button onclick="updateTitle()">עדכן</button>
-                <label style="font-size: 13px;">תאריך אחרון</label><input type="date" id="date"><button onclick="updateDate()">עדכן</button>
-
+                <br />
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="uploadStudents" class="form-label">תלמידות</label>
+                            <input type=file class="form-control" id="uploadStudents" name="files[]">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="uploadTasks" class="form-label">משימות</label>
+                            <input type=file class="form-control" id="uploadTasks" name="files[]">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="uploaduniqTasks" class="form-label">משימות אישיות</label>
+                            <input type=file class="form-control" id="uploaduniqTasks" name="files[]">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-5">
+                            <label for="title" class="form-label">כותרת</label>
+                            <input type="text" class="form-control" id="title">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label class="form-label"></label>
+                            <button onclick="updateTitle()" class="form-control">עדכן</button>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="date" class="form-label">תוקף (יום פעילות אחרון)</label>
+                            <input type="date" class="form-control" id="date">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label class="form-label"></label>
+                            <button onclick="updateDate()" class="form-control">עדכן</button>
+                        </div>
+                    </div>
+                </form>
+                <br />
+                <div>
+                    התקנת דרייבר למדפסת   |
+                    התקנת פונטים   |
+                    הגדרת הדפסה ללא כותרות   |
+                    הגדרת דפדפן כקיוסק  --kiosk --kiosk-printing   |
+                    הגנה על הקבצים באמצעות סיסמא   |
+                </div>
             </div>
         </div>
     </div>
-
 
     <script>
         document.getElementById('uploadStudents').addEventListener('change', handleFileSelect, false);
