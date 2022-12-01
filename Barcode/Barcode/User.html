@@ -123,7 +123,7 @@
                 }
             }
             localStorage.setItem("tasks", JSON.stringify(tasksExcel));
-            finisfSesion()
+            finishSession()
         }
 
         function updateUniqTask() {
@@ -168,7 +168,7 @@
                 }
             }
             localStorage.setItem("uniqTasks", JSON.stringify(uniqTasksExcel));
-            finisfSesion()
+            finishSession()
         }
 
         function buyProduct() {
@@ -196,7 +196,7 @@
             }
         };
 
-        function finisfSesion() {
+        function finishSession() {
             savePoints(result.points);
             if (studentResult.tz.toString().startsWith(1)) {
                 document.getElementById("line1").innerHTML = "כיתה מדהימה" + "! " + "ביצעתם את משימה" + " " + result.name;
@@ -243,29 +243,31 @@
                 var originalContents = document.body.innerHTML;
                 document.body.innerHTML = printContents;
                 window.print();
-
                 document.body.innerHTML = originalContents;
                 document.getElementById("line1").innerHTML = "!כרגע יש בחשבון " + sum + " נקודות ";
                 document.getElementById("line2").innerHTML = "...לא לשכוח לקחת את האישור מהמדפסת";
-                reset();
+                reset(4000);
             }, 2000);
+
         }
 
-        function reset() {
-            document.getElementById("line1").innerHTML = "ברוכה הבאה ";
-            document.getElementById("line2").innerHTML = "העבירי את הכרטיס האישי שלך בסורק הברקוד";
-            document.getElementById("gif").src = 'resources/barcode.gif';
-            document.getElementById("barcode").value = "";
-            tasksExcel = JSON.parse(localStorage.getItem("tasks"));
-            studentsExcel = JSON.parse(localStorage.getItem("students"));
-            uniqTasksExcel = JSON.parse(localStorage.getItem("uniqTasks"));
-            products = [{}];
-            counter = 0;
-            state = 1;
-            studentResult = ""
-            result = ""
-            sum = 0
-            returnval = 0;
+        function reset(time = 0) {
+            setTimeout(function () {
+                document.getElementById("line1").innerHTML = "ברוכה הבאה ";
+                document.getElementById("line2").innerHTML = "העבירי את הכרטיס האישי שלך בסורק הברקוד";
+                document.getElementById("gif").src = 'resources/barcode.gif';
+                document.getElementById("barcode").value = "";
+                tasksExcel = JSON.parse(localStorage.getItem("tasks"));
+                studentsExcel = JSON.parse(localStorage.getItem("students"));
+                uniqTasksExcel = JSON.parse(localStorage.getItem("uniqTasks"));
+                products = [{}];
+                counter = 0;
+                state = 1;
+                studentResult = ""
+                result = ""
+                sum = 0
+                returnval = 0;
+            }, time);
         }
 
         function showAlert(message) {
@@ -282,18 +284,16 @@
         }
     </script>
 
-    <div id="printableArea" style="font-weight: 100; font-family: 'Fb Magnolia'; border: solid; display: none;">
-        <div style="font-size:60px; z-index: -1;">אישור </div>
+    <div id="printableArea" style="height:1px;color:transparent; border:solid;display:none">
+        <span style="font-size:60px; font-family: Fb Magnolia;z-index: -1;">אישור </span>
         <br /><br /><br />
-        <div style="font-size:30px;">
-            <div id="d1"> </div>
-            <div id="d2"> </div>
-            <div id="d3"> </div>
-        </div>
+        <div id="d1" style="font-size:30px; font-family: Fb Magnolia;font-weight:100"> </div>
+        <div id="d2" style="font-size:30px; font-family: Fb Magnolia;font-weight:100"> </div>
+        <div id="d3" style="font-size:30px; font-family: Fb Magnolia;font-weight:100"> </div>
         <br /><br /><br />
-        <div id="d4" style="font-size:60px;">בהצלחה בהמשך</div>
+        <div id="d4" style="font-size:60px; font-family: Fb Magnolia;">בהצלחה בהמשך</div>
         <br /><br /><br /><br /><br /> <br />
-        <div id="d5" style="font-size:20px;">להזמנות: אפרת מלכה 0504167969 211efrat@gmail.com</div>
+        <div id="d5" style="font-size:20px; font-family: Fb Magnolia;">להזמנות: אפרת מלכה 0504167969 211efrat@gmail.com</div>
     </div>
     <div class="background1">
         <div class="background2">

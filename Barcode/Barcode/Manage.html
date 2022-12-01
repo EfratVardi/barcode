@@ -13,7 +13,28 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        var counter = 0;
 
+        document.addEventListener("keypress", function (e) {
+            if (e.target.tagName !== "INPUT") {
+                var input = document.querySelector(".my-input");
+                input.focus();
+                input.value = e.key;
+                e.preventDefault();
+            }
+            counter += 1;
+            if (counter > 9) {
+                if (document.getElementById('barcode').value == '999999999')
+                    login()
+            }
+        });
+
+        function login() {
+            counter = 0;
+            window.location.href = 'User.html';
+        }
+    </script>
     <div class="background1">
         <div class="background2">
             <div class="text">
@@ -23,6 +44,7 @@
                 <img onclick="New()" src="resources/file-plus.svg" />
                 <div id="studentsGrid" style="width:100%" class="ag-theme-alpine"></div>
             </div>
+            <input type="text" class="my-input" id="barcode">
         </div>
     </div>
 </body>

@@ -35,3 +35,13 @@ img {
     vertical-align: middle;
     height: 85%;
 }
+
+.my-input {
+    border-color: transparent;
+    float: left;
+}
+
+input:focus {
+    outline: none;
+    color: transparent;
+}

@@ -3,9 +3,9 @@ var columnDefs = [
     { headerName: "כיתה", field: "grade", editable: true },
     { headerName: "תעודת זהות", field: "tz"},
     { headerName: "שם", field: "name", editable: true },
-    { headerName: "מספרי משימות", field: "tasksNumber" ,hide:true },
-    { headerName: "שמות המשימות", field: "tasks" },
-    { headerName: "סך נקודות", field: "points" }
+    { headerName: "מספרי משימות", field: "tasksNumber", hide: true },
+    { headerName: "סך נקודות", field: "points" },
+    { headerName: "שמות המשימות", field: "tasks" }
 ];
 
 var rowData = JSON.parse(localStorage.getItem("students"))
@@ -29,7 +29,7 @@ var gridOptions = {
 function onFirstDataRendered(params) {
     gridOptions.api.sizeColumnsToFit({
         defaultMinWidth: 150,
-        columnLimits: [{ key: 'tasks', minWidth: 800 }, { key: 'points', maxWidth: 200 }],
+        columnLimits: [{ key: 'tasks', minWidth: 800 }],
     });
 }
 
@@ -47,7 +47,7 @@ function New() {
         }
     }
     students.unshift({
-        grade: 'שורה חדשה', name: 'שורה חדשה', tz: tz, barcode: '',
+        grade: '------', name: '------', tz: tz, barcode: '',
         points: 0, tasks: ",", tasksNumber: ","
     })
     localStorage.setItem("students", JSON.stringify(students));
