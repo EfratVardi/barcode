@@ -237,7 +237,7 @@
                 else
                     document.getElementById("d2").innerHTML = "     רכשה את מתנה " + " " + result.name;
 
-                document.getElementById("d3").innerHTML = "     סך הנקודות בחשבון" + " :" + sum;
+                document.getElementById("d3").innerHTML = "     נקודות בחשבון" + " :" + sum;
 
                 var printContents = document.getElementById(divName).innerHTML;
                 var originalContents = document.body.innerHTML;
@@ -283,17 +283,18 @@
             reset();
         }
     </script>
-
-    <div id="printableArea" style="height:1px;color:transparent; border:solid;display:none">
-        <span style="font-size:60px; font-family: Fb Magnolia;z-index: -1;">אישור </span>
-        <br /><br /><br />
-        <div id="d1" style="font-size:30px; font-family: Fb Magnolia;font-weight:100"> </div>
-        <div id="d2" style="font-size:30px; font-family: Fb Magnolia;font-weight:100"> </div>
-        <div id="d3" style="font-size:30px; font-family: Fb Magnolia;font-weight:100"> </div>
-        <br /><br /><br />
-        <div id="d4" style="font-size:60px; font-family: Fb Magnolia;">בהצלחה בהמשך</div>
-        <br /><br /><br /><br /><br /> <br />
-        <div id="d5" style="font-size:20px; font-family: Fb Magnolia;">להזמנות: אפרת מלכה 0504167969 211efrat@gmail.com</div>
+    <div id="printableArea" style="display:none;">
+        <div style="direction: rtl; font-family: Fb Magnolia;">
+            <span style="font-size:50px; z-index: -1;">אישור </span>
+            <br /><br /><br />
+            <div id="d1" style="font-size:25px; font-weight:100;"> </div>
+            <div id="d2" style="font-size:25px; font-weight:100;"> </div>
+            <div id="d3" style="font-size:25px; font-weight:100;"> </div>
+            <br /><br /><br />
+            <span id="d4" style="font-size:50px; ">בהצלחה בהמשך</span>
+            <br /><br /><br /><br /><br /> <br />
+            <div id="d5" style="font-size:20px; font-family: arial;">להזמנות: אפרת מלכה 0504167969 211efrat@gmail.com</div>
+        </div>
     </div>
     <div class="background1">
         <div class="background2">

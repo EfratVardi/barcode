@@ -99,6 +99,7 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="Expired.html" />
+    <Content Include="HtmlPage1.html" />
     <Content Include="js\ag-grid-community.min.js" />
     <Content Include="js\ag-grid.js" />
     <Content Include="js\bootstrap.bundle.js" />
