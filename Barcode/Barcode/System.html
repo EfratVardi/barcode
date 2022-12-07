@@ -14,11 +14,32 @@
     <script src="js/xlsx.full.min.js"></script>
 
     <script>
+        var counter = 0;
+
         function onLoad() {
             if (localStorage.getItem("title"))
                 document.getElementById("title").value = localStorage.getItem("title")
             if (localStorage.getItem("date"))
                 document.getElementById("date").value = localStorage.getItem("date")
+        }
+
+        document.addEventListener("keypress", function (e) {
+            if (e.target.tagName !== "INPUT") {
+                var input = document.querySelector(".my-input");
+                input.focus();
+                input.value = e.key;
+                e.preventDefault();
+            }
+            counter += 1;
+            if (counter > 9) {
+                if (document.getElementById('barcode').value == '000000000')
+                    login()
+            }
+        });
+
+        function login() {
+            counter = 0;
+            window.location.href = 'User.html';
         }
 
         var json_object;
@@ -130,6 +151,7 @@
                     לכוון שעון במחשב
                 </div>
             </div>
+            <input type="text" class="my-input" id="barcode">
         </div>
     </div>
 

@@ -26,5 +26,21 @@ body, html {
     margin-left: auto;
 }
 
+.my-input {
+    border-color: transparent;
+    float: left;
+}
+
+input:focus {
+    outline: none;
+    color: transparent;
+}
+
+.gif {
+    width: 25vw;
+}
+
+
+
 
 

@@ -23,19 +23,6 @@
     font-weight: 300;
 }
 
-.gif {
-    width: 25vw;
-}
-
-.my-input {
-    border-color: transparent;
-    float: left;
-}
-
-input:focus {
-    outline: none;
-    color: transparent;
-}
 
 
 

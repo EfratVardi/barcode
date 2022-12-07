@@ -51,7 +51,9 @@
                 counter = 0;
                 document.getElementById("barcode").value = "";
                 if (searchVal == '999999999')
-                    login()
+                    login('Manage')
+                else if (searchVal == '000000000')
+                    login('System')
                 else if (searchVal.startsWith('1') || searchVal.startsWith('2') || searchVal.startsWith('3'))//כיתה או בת
                     searchInExcel();
                 else if (searchVal.startsWith('4') && state == 2)//משימה רגילה
@@ -67,8 +69,8 @@
             }
         });
 
-        function login() {
-            window.location.href = 'Manage.html';
+        function login(page) {
+            window.location.href = page+'.html';
         }
 
         function searchInExcel() {
