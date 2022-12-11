@@ -54,7 +54,7 @@
                     login('Manage')
                 else if (searchVal == '000000000')
                     login('System')
-                else if (searchVal.startsWith('1') || searchVal.startsWith('2') || searchVal.startsWith('3'))//כיתה או בת
+                else if (state == 1)//כיתה או בת
                     searchInExcel();
                 else if (searchVal.startsWith('4') && state == 2)//משימה רגילה
                     updateTask();
@@ -70,7 +70,7 @@
         });
 
         function login(page) {
-            window.location.href = page+'.html';
+            window.location.href = page + '.html';
         }
 
         function searchInExcel() {
