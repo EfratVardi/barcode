@@ -100,6 +100,12 @@
             }
             localStorage["date"] = document.getElementById("date").value;
         }
+
+        function resetExcel() {
+            var tasksExcel = JSON.parse(localStorage.getItem("tasks"));
+            var studentsExcel = JSON.parse(localStorage.getItem("students"));
+            var uniqTasksExcel = JSON.parse(localStorage.getItem("uniqTasks"));
+        }
     </script>
 
     <div class="background1">
@@ -128,7 +134,7 @@
                             <input type="text" class="form-control" id="title">
                         </div>
                         <div class="form-group col-md-1">
-                            <label class="form-label"></label>
+                            <label class="form-label">.</label>
                             <button onclick="updateTitle()" class="form-control">עדכן</button>
                         </div>
                         <div class="form-group col-md-5">
@@ -136,8 +142,14 @@
                             <input type="date" class="form-control" id="date">
                         </div>
                         <div class="form-group col-md-1">
-                            <label class="form-label"></label>
+                            <label class="form-label">.</label>
                             <button onclick="updateDate()" class="form-control">עדכן</button>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-1">
+                            <label class="form-label">איפוס אקסלים</label>
+                            <button onclick="resetExcel()" class="form-control">עדכן</button>
                         </div>
                     </div>
                 </form>
