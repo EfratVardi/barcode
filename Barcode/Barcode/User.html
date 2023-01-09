@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/ag-grid.js"></script>
+
     <script>
         var End = localStorage.getItem("date")
         var Today = new Date().toISOString().split('T')[0];
@@ -34,6 +36,7 @@
                 showAlert("לא הועלו כל הקבצים!")
             }
             document.getElementById("title").innerHTML = localStorage.getItem("title")
+            Export()
         }
 
         document.addEventListener("keypress", function (e) {
@@ -85,6 +88,7 @@
             }
             document.getElementById("line1").innerHTML = "(: שלום  " + studentResult.name;
             document.getElementById("line2").innerHTML = "יש לסרוק את הברקוד לעדכון משימה";
+            document.getElementById("line3").innerHTML = "עד כה צברת " + studentResult.points + " נקודות";
         }
 
         function updateTask() {
@@ -167,7 +171,6 @@
                     break;
                 }
             }
-            localStorage.setItem("uniqTasks", JSON.stringify(uniqTasksExcel));
             finishSession()
         }
 
@@ -197,22 +200,29 @@
         };
 
         function finishSession() {
-            savePoints(result.points);
-            if (studentResult.tz.toString().startsWith(1)) {
-                document.getElementById("line1").innerHTML = "כיתה מדהימה" + "! " + "ביצעתם את משימה" + " " + result.name;
-                document.getElementById("line2").innerHTML = "מיד תועברו להדפסת אישור";
+            try {
+                savePoints(result.points);
+            }
+            catch {
+                showAlert("אירעה שגיאה במהלך שמירה. הנתונים לא נשמרו!")
+            }
+            finally {
+                if (studentResult.tz.toString().startsWith(1)) {
+                    document.getElementById("line1").innerHTML = "כיתה מדהימה" + "! " + "ביצעתם את משימה" + " " + result.name;
+                    document.getElementById("line2").innerHTML = "מיד תועברו להדפסת אישור";
+                    document.getElementById("gif").src = 'resources/like.gif';
+                }
+                else {
+                    document.getElementById("line1").innerHTML = "הידד" + "! " + "ביצעת את משימה" + " " + result.name;
+                    document.getElementById("line2").innerHTML = "מיד תועברי להדפסת אישור";
+                }
                 document.getElementById("gif").src = 'resources/like.gif';
+                toPrint(1);
             }
-            else {
-                document.getElementById("line1").innerHTML = "הידד" + "! " + "ביצעת את משימה" + " " + result.name;
-                document.getElementById("line2").innerHTML = "מיד תועברי להדפסת אישור";
-            }
-            document.getElementById("gif").src = 'resources/like.gif';
-            toPrint(1);
+
         }
 
         function savePoints(points) {
-
             sum = parseInt(points) + parseInt(studentResult.points);
             if (sum < 0) {
                 showAlert("אין לך מספיק נקודות בחשבון !")
@@ -226,9 +236,17 @@
                 }
             }
             localStorage.setItem("students", JSON.stringify(studentsExcel));
+            localStorage.setItem("uniqTasks", JSON.stringify(uniqTasksExcel));
         }
 
         function toPrint(task) {
+            studentsExcel = JSON.parse(localStorage.getItem("students"))
+            for (var i = 0; i < studentsExcel.length; i++) {
+                if (studentsExcel[i].tz == studentResult.tz) {
+                    studentResult.sum = studentsExcel[i].sum;
+                    break;
+                }
+            }
             var divName = "printableArea";
             setTimeout(function () {
                 document.getElementById("d1").innerHTML = studentResult.name + " " + "מכיתה " + studentResult.grade;
@@ -237,7 +255,7 @@
                 else
                     document.getElementById("d2").innerHTML = "     רכשה את מתנה " + " " + result.name;
 
-                document.getElementById("d3").innerHTML = "     נקודות בחשבון" + " :" + sum;
+                document.getElementById("d3").innerHTML = "     נקודות בחשבון" + " :" + studentResult.sum;
 
                 var printContents = document.getElementById(divName).innerHTML;
                 var originalContents = document.body.innerHTML;
@@ -255,6 +273,7 @@
             setTimeout(function () {
                 document.getElementById("line1").innerHTML = "ברוכה הבאה ";
                 document.getElementById("line2").innerHTML = "העבירי את הכרטיס האישי שלך בסורק הברקוד";
+                document.getElementById("line3").innerHTML = "";
                 document.getElementById("gif").src = 'resources/barcode.gif';
                 document.getElementById("barcode").value = "";
                 tasksExcel = JSON.parse(localStorage.getItem("tasks"));
@@ -271,6 +290,7 @@
         }
 
         function showAlert(message) {
+            reset();
             document.querySelector(".modal-body").innerHTML = message;
             $(document).ready(function () {
                 $('#modal').modal('show')
@@ -279,7 +299,6 @@
                 $(document).ready(function () {
                     $('#modal').modal('hide')
                 });
-                reset();
             }, 2500);
         }
     </script>
@@ -301,6 +320,7 @@
             <div class="text">
                 <div id="line1">ברוכה הבאה</div>
                 <div id="line2">העבירי את הכרטיס האישי שלך בסורק הברקוד</div>
+                <div id="line3"></div>
                 <img src="resources/barcode.gif" class="gif" id="gif" />
             </div>
             <input type="text" class="my-input" id="barcode">

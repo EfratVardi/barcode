@@ -102,9 +102,18 @@
         }
 
         function resetExcel() {
-            var tasksExcel = JSON.parse(localStorage.getItem("tasks"));
             var studentsExcel = JSON.parse(localStorage.getItem("students"));
             var uniqTasksExcel = JSON.parse(localStorage.getItem("uniqTasks"));
+            for (var i = 0; i < studentsExcel.length; i++) {
+                studentsExcel[i].points = 0
+                studentsExcel[i].tasksNumber = ','
+                studentsExcel[i].tasks = ','
+            }
+            for (var i = 0; i < uniqTasksExcel.length; i++) {
+                uniqTasksExcel[i].used = 0
+            }      
+            localStorage.setItem("students", JSON.stringify(studentsExcel));
+            localStorage.setItem("uniqTasks", JSON.stringify(uniqTasksExcel));
         }
     </script>
 
@@ -115,17 +124,21 @@
                 <br />
                 <form>
                     <div class="form-row">
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-md-3">
                             <label for="uploadStudents" class="form-label">תלמידות</label>
                             <input type=file class="form-control" id="uploadStudents" name="files[]">
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-md-3">
                             <label for="uploadTasks" class="form-label">משימות</label>
                             <input type=file class="form-control" id="uploadTasks" name="files[]">
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-md-3">
                             <label for="uploaduniqTasks" class="form-label">משימות אישיות</label>
                             <input type=file class="form-control" id="uploaduniqTasks" name="files[]">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label class="form-label">.</label>
+                            <button onclick="resetExcel()" class="form-control"> איפוס אקסלים</button>
                         </div>
                     </div>
                     <div class="form-row">
@@ -144,12 +157,6 @@
                         <div class="form-group col-md-1">
                             <label class="form-label">.</label>
                             <button onclick="updateDate()" class="form-control">עדכן</button>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-1">
-                            <label class="form-label">איפוס אקסלים</label>
-                            <button onclick="resetExcel()" class="form-control">עדכן</button>
                         </div>
                     </div>
                 </form>
