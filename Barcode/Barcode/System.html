@@ -21,6 +21,8 @@
                 document.getElementById("title").value = localStorage.getItem("title")
             if (localStorage.getItem("date"))
                 document.getElementById("date").value = localStorage.getItem("date")
+            if (!localStorage.getItem("log"))
+                window.localStorage.setItem("log", '[]')
         }
 
         document.addEventListener("keypress", function (e) {

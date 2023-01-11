@@ -200,26 +200,18 @@
         };
 
         function finishSession() {
-            try {
-                savePoints(result.points);
-            }
-            catch {
-                showAlert("אירעה שגיאה במהלך שמירה. הנתונים לא נשמרו!")
-            }
-            finally {
-                if (studentResult.tz.toString().startsWith(1)) {
-                    document.getElementById("line1").innerHTML = "כיתה מדהימה" + "! " + "ביצעתם את משימה" + " " + result.name;
-                    document.getElementById("line2").innerHTML = "מיד תועברו להדפסת אישור";
-                    document.getElementById("gif").src = 'resources/like.gif';
-                }
-                else {
-                    document.getElementById("line1").innerHTML = "הידד" + "! " + "ביצעת את משימה" + " " + result.name;
-                    document.getElementById("line2").innerHTML = "מיד תועברי להדפסת אישור";
-                }
+            savePoints(result.points);
+            if (studentResult.tz.toString().startsWith(1)) {
+                document.getElementById("line1").innerHTML = "כיתה מדהימה" + "! " + "ביצעתם את משימה" + " " + result.name;
+                document.getElementById("line2").innerHTML = "מיד תועברו להדפסת אישור";
                 document.getElementById("gif").src = 'resources/like.gif';
-                toPrint(1);
             }
-
+            else {
+                document.getElementById("line1").innerHTML = "הידד" + "! " + "ביצעת את משימה" + " " + result.name;
+                document.getElementById("line2").innerHTML = "מיד תועברי להדפסת אישור";
+            }
+            document.getElementById("gif").src = 'resources/like.gif';
+            toPrint(1);
         }
 
         function savePoints(points) {
@@ -235,8 +227,13 @@
                     break;
                 }
             }
-            localStorage.setItem("students", JSON.stringify(studentsExcel));
-            localStorage.setItem("uniqTasks", JSON.stringify(uniqTasksExcel));
+            try {
+                localStorage.setItem("students", JSON.stringify(studentsExcel));
+                localStorage.setItem("uniqTasks", JSON.stringify(uniqTasksExcel));
+            }
+            catch(err) {
+                showAlert("אירעה שגיאה במהלך שמירה. הנתונים לא נשמרו!")
+            }      
         }
 
         function toPrint(task) {
