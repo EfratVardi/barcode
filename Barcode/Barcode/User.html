@@ -43,6 +43,9 @@
                 if (localStorage.getItem("position")) {
                     document.getElementById("position").innerHTML += ' ' + localStorage.getItem("position")
                 }
+                else {
+                    document.getElementById("position").style.display = "none"; 
+                }
                 document.getElementById("title").innerHTML = localStorage.getItem("title")
                 var currentDate = new Date(Date.now()).toLocaleString().split(',')[0]
                 if (!localStorage.getItem("downloadDate")) {
@@ -455,7 +458,7 @@
             <div id="line2">העבירי את הכרטיס האישי שלך בסורק הברקוד</div>
             <div id="line3"></div>
         </div>
-        <div id="position">עמדה</div>
+        <div  id="position">עמדה</div>
         <input type="text" class="my-input" id="barcode">
         <div id="studentsGrid"></div>
         <div id="logGrid"></div>
