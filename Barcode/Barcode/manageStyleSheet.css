@@ -11,7 +11,7 @@
     font-style: normal;
     font-variant: normal;
     line-height: 2vw;
-    color: black;
+    color: white;
 }
 
 #line1 {
@@ -34,5 +34,6 @@ img {
     padding: 1rem 1rem;
     vertical-align: middle;
     height: 85%;
+    --ag-background-opacity:0.33
 }
 

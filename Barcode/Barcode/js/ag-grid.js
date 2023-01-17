@@ -5,7 +5,8 @@ var columnDefs = [
     { headerName: "שם", field: "name", editable: true },
     { headerName: "מספרי משימות", field: "tasksNumber", hide: true },
     { headerName: "סך נקודות", field: "points" },
-    { headerName: "שמות המשימות", field: "tasks" }
+    { headerName: "שמות המשימות", field: "tasks" },
+    { headerName: "תאריכי עדכון", field: "dates" }
 ];
 
 var rowData = JSON.parse(localStorage.getItem("students"))
@@ -48,7 +49,7 @@ function New() {
     }
     students.unshift({
         grade: '------', name: '------', tz: tz, barcode: '',
-        points: 0, tasks: ",", tasksNumber: ","
+        points: 0, tasks: ",", tasksNumber: ",",dates:'[]'
     })
     localStorage.setItem("students", JSON.stringify(students));
     gridOptions.rowData = students;

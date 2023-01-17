@@ -4,8 +4,7 @@ body, html {
     margin: 0;
 }
 
-.background1 {
-    background-image: url('resources/background.jpg');
+.background {
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,22 +12,13 @@ body, html {
     z-index: -1;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
-    font-family: Fb Magnolia;
-}
-
-.background2 {
-    height: 100%;
-    width: 95%;
-    background-color: #ffffff;
-    opacity: 0.4;
-    filter: alpha(opacity=40);
-    margin-right: auto;
-    margin-left: auto;
+    font-family: 'Gan CLM';
 }
 
 .my-input {
     border-color: transparent;
-    float: left;
+    color:transparent;
+    background-color:transparent;
 }
 
 input:focus {

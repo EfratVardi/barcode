@@ -15,12 +15,13 @@
 
     <script>
         var counter = 0;
-
         function onLoad() {
             if (localStorage.getItem("title"))
                 document.getElementById("title").value = localStorage.getItem("title")
             if (localStorage.getItem("date"))
                 document.getElementById("date").value = localStorage.getItem("date")
+            if (localStorage.getItem("position"))
+                document.getElementById("position").value = localStorage.getItem("position")
             if (!localStorage.getItem("log"))
                 window.localStorage.setItem("log", '[]')
         }
@@ -34,7 +35,7 @@
             }
             counter += 1;
             if (counter > 9) {
-                if (document.getElementById('barcode').value == '000000000')
+                if (document.getElementById('barcode').value == '011429519')
                     login()
             }
         });
@@ -90,17 +91,24 @@
         }
 
         function updateTitle(evt) {
-            if (localStorage.getItem("title") == null) {
+            if (!localStorage.getItem("title")) {
                 localStorage.setItem("title", "");
             }
-            localStorage["title"] = document.getElementById("title").value;
+            localStorage.setItem("title", document.getElementById("title").value);
         }
 
         function updateDate(evt) {
-            if (localStorage.getItem("date") == null) {
+            if (!localStorage.getItem("date")) {
                 localStorage.setItem("date", "");
             }
-            localStorage["date"] = document.getElementById("date").value;
+            localStorage.setItem("date", document.getElementById("date").value);
+        }
+
+        function updatePosition() {
+            if (!localStorage.getItem("position")) {
+                localStorage.setItem("position", "");
+            }
+            localStorage.setItem("position",document.getElementById("position").value);
         }
 
         function resetExcel() {
@@ -110,6 +118,7 @@
                 studentsExcel[i].points = 0
                 studentsExcel[i].tasksNumber = ','
                 studentsExcel[i].tasks = ','
+                studentsExcel[i].dates = '[]'
             }
             for (var i = 0; i < uniqTasksExcel.length; i++) {
                 uniqTasksExcel[i].used = 0
@@ -119,8 +128,7 @@
         }
     </script>
 
-    <div class="background1">
-        <div class="background2">
+    <div class="background"  id="background" style="background-image: url('resources/background4.gif')">
             <div class="text">
                 <div id="line1">הגדרות המערכת</div>
                 <br />
@@ -144,7 +152,7 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-5">
+                        <div class="form-group col-md-3">
                             <label for="title" class="form-label">כותרת</label>
                             <input type="text" class="form-control" id="title">
                         </div>
@@ -152,13 +160,21 @@
                             <label class="form-label">.</label>
                             <button onclick="updateTitle()" class="form-control">עדכן</button>
                         </div>
-                        <div class="form-group col-md-5">
+                        <div class="form-group col-md-3">
                             <label for="date" class="form-label">תוקף (יום פעילות אחרון)</label>
                             <input type="date" class="form-control" id="date">
                         </div>
                         <div class="form-group col-md-1">
                             <label class="form-label">.</label>
                             <button onclick="updateDate()" class="form-control">עדכן</button>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="position" class="form-label">מספר עמדה</label>
+                            <input type="number" class="form-control" id="position">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label class="form-label">.</label>
+                            <button onclick="updatePosition()" class="form-control">עדכן</button>
                         </div>
                     </div>
                 </form>
@@ -169,13 +185,12 @@
                     התקנת פונטים   |
                     הגנה על הקבצים באמצעות סיסמא   |
                     הגדרת הדפסה ללא כותרות  |
-                    לכוון שעון במחשב
+                    לכוון שעון במחשב |
                     בדיקת כפולים  |
                     ת.ז. מתחליות ב2/3
                 </div>
             </div>
             <input type="text" class="my-input" id="barcode">
-        </div>
     </div>
 
     <script>

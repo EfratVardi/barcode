@@ -99,8 +99,9 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="Expired.html" />
-    <Content Include="js\ag-grid-community.min.js" />
     <Content Include="js\ag-grid.js" />
+    <Content Include="js\ag-grid-community.min.js" />
+    <Content Include="js\log-ag-grid.js" />
     <Content Include="js\bootstrap.bundle.js" />
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\bootstrap.js" />
@@ -109,11 +110,8 @@
     <Content Include="js\jquery.min.js" />
     <Content Include="js\xlsx.full.min.js" />
     <Content Include="Manage.html" />
-    <Content Include="resources\background.jpg" />
-    <Content Include="resources\barcode.gif" />
     <Content Include="resources\file-earmark-excel.svg" />
     <Content Include="resources\file-plus.svg" />
-    <Content Include="resources\like.gif" />
     <Content Include="User.html" />
     <Content Include="ManageStyleSheet.css" />
     <Content Include="MainStyleSheet.css" />
