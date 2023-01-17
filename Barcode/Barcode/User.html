@@ -40,7 +40,9 @@
                 if (!localStorage.getItem("log")) {
                     localStorage.setItem("log", "[]")
                 }
-                document.getElementById("position").innerHTML +=' '+ localStorage.getItem("position")
+                if (localStorage.getItem("position")) {
+                    document.getElementById("position").innerHTML += ' ' + localStorage.getItem("position")
+                }
                 document.getElementById("title").innerHTML = localStorage.getItem("title")
                 var currentDate = new Date(Date.now()).toLocaleString().split(',')[0]
                 if (!localStorage.getItem("downloadDate")) {
